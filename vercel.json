@@ -1,0 +1,21 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "crons": [
+    {
+      "path": "/api/scouts/verify?tier=1&limit=20",
+      "schedule": "0 6 * * *"
+    },
+    {
+      "path": "/api/scouts/verify?tier=2&limit=30",
+      "schedule": "0 7 * * 1,4"
+    },
+    {
+      "path": "/api/scouts/verify?tier=3&limit=50",
+      "schedule": "0 8 * * 0"
+    },
+    {
+      "path": "/api/scouts/resolve-urls",
+      "schedule": "0 5 1 * *"
+    }
+  ]
+}

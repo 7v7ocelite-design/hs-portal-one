@@ -1,0 +1,784 @@
+first_name,last_name,your_school,purchased_school,your_position,purchased_position
+Tim,Albin,Charlotte,University of North Carolina at Charlotte,Head Coach,Head Coach
+Tre',Bell,Charlotte,University of North Carolina at Charlotte,Assistant Coach - Cornerbacks/Defensive Pass Game Coordinator,"Assistant Coach (Cornerbacks, Defensive Passing-Game Coordinator)"
+Nate,Faanes,Charlotte,University of North Carolina at Charlotte,Defensive Coordinator/Linebackers,"Assistant Coach (Defensive Coordinator, Linebackers)"
+Todd,Fitch,Charlotte,University of North Carolina at Charlotte,Associate Head Coach/Offensive Coordinator/Quarterbacks,"Associate Head Coach (Offensive Coordinator, Quarterbacks)"
+Brian,Haines,Charlotte,University of North Carolina at Charlotte,Assistant Head Coach/Special Teams Coordinator/Running Backs,"Assistant Head Coach (Running Backs, Special Teams)"
+Kurt,Mattix,Charlotte,University of North Carolina at Charlotte,Co-Defensive Coordinator/Defensive Line,"Assistant Coach (Co-Defensive Coordinator, Defensive Line)"
+Brian,Metz,Charlotte,University of North Carolina at Charlotte,Assistant Coach/Tight Ends/Recruiting Coordinator,"Recruiting Coordinator, Assistant Coach (Tight Ends)"
+Bryan,Nardo,Charlotte,University of North Carolina at Charlotte,Assistant Coach/Safeties,Assistant Coach (Safeties)
+Vince,Reynolds,Charlotte,University of North Carolina at Charlotte,Assistant Coach/Defensive Tackles,Assistant Coach (Defensive Tackles)
+Allen,Rudolph,Charlotte,University of North Carolina at Charlotte,Assistant Coach/Offensive Line/Run Game Coordinator,Assistant Coach (Offensive Line/Run Game Coordinator
+Paul,Turner,Charlotte,University of North Carolina at Charlotte,Assistant Coach - Wide Receivers/Passing Game Coordinator,"Assistant Coach (Wide Receivers, Passing-Game Coordinator)"
+Jordan,Davis,East Carolina,University of North Texas,Offensive Coordinator/Quarterbacks,"Assistant Coach (Offensive Coordinator, Wide Receivers)"
+Julian,Griffin,East Carolina,University of California - Berkeley,Running Backs,Assistant Coach (Running Backs)
+Alex,Huettel,East Carolina,Old Dominion University,Offensive Line/Run Game Coordinator,Assistant Coach (Offensive Line)
+Juan,Soto,East Carolina,University of North Texas,Wide Receivers,Assistant Coach (Wide Receivers)
+Taylor,Brown,FAU,Florida Atlantic University,Executive Director of Player Personnel,Director of Player Personnel
+Brett,Dewhurst,FAU,Florida Atlantic University,Defensive Coordinator,Assistant Coach (Defensive Coordinator)
+David,Draper,FAU,Florida Atlantic University,Director of Football Operations,Director of Operations
+Jajuan,Dulaney,FAU,Florida Atlantic University,Tight Ends,Assistant Coach (Tight Ends)
+Antonio,Fenelus,FAU,Florida Atlantic University,Defensive Backs,Assistant Coach (Defensive Backs)
+Stephen,Hamby,FAU,Florida Atlantic University,Offensive Line,Assistant Coach (Offensive Line)
+Zach,Kittley,FAU,Florida Atlantic University,Head Football Coach,Head Coach
+Brandon,Lacy,FAU,Florida Atlantic University,Ends/Rush,Assistant Coach (Edge Rushers)
+DJ,McCarthy,FAU,Florida Atlantic University,Wide Receivers,Assistant Coach (Wide Receivers)
+Chris,Perkins,FAU,Florida Atlantic University,Running Backs,Assistant Coach (Running Backs)
+Devin,Santana,FAU,Florida Atlantic University,Defensive Tackles,Assistant Coach (Defensive Tackles)
+Tyler,Schovanec,FAU,Florida Atlantic University,Special Teams Coordinator,Assistant Coach (Special Teams)
+Aaron,Schwanz,FAU,Florida Atlantic University,Inside Linebacker,Assistant Coach (Inside Linebackers)
+Matt,Wiesner,FAU,Florida Atlantic University,Director of Scouting/NFL Liaison,"Director of Scouting, NFL Liaison"
+Jelani,Berassa,FIU,Florida International University,Assistant Coach - Wide Receivers,Assistant Coach (Wide Receivers)
+Dominique,Bowman,FIU,University of Memphis,Defensive Backs/Safeties,"Assistant Coach (Defensive Backs, Safeties)"
+Nick,Coleman,FIU,Florida International University,Offensive Coordinator/Quarterbacks Coach,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Tim,Conner,FIU,University of Cincinnati,Special Teams Coordinator,Assistant Coach (Special Teams)
+Kevin,Decker,FIU,University of Memphis,Offensive Coordinator/Quarterbacks,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Jovan,Dewitt,FIU,Florida International University,Assistant Head Coach/Defensive Coordinator,Assistant Head Coach (Defensive Coordinator)
+Aaron,Dobson,FIU,University of Memphis,Wide Receivers,Assistant Coach (Wide Receivers)
+Anthony,Gaitor,FIU,Florida International University,Assistant Coach - Cornerbacks,Assistant Coach (Cornerbacks)
+Kenneth,Gilstrap,FIU,Florida International University,Special Teams Coordinator - Safeties,"Assistant Coach (Safeties, Special Teams)"
+Christian,Gomez,FIU,Florida International University,Graduate Assistant,Graduate Assistant
+Charles,Huff,FIU,University of Memphis,Head Football Coach,Head Coach
+Benedick,Hyppolite,FIU,Florida International University,Assistant Coach - Running Backs,Assistant Coach (Running Backs)
+Khadry,Jackson,FIU,Florida International University,Graduate Assistant,Graduate Assistant
+Andy,Kwon,FIU,University of California - Los Angeles - UCLA,Offensive Line,Assistant Coach (Offensive Line)
+Telly,Lockette,FIU,University of Memphis,Assistant Head Coach/Running Backs,Assistant Head Coach (Running Backs)
+Eric,Mathies,FIU,University of Memphis,Defensive Line,Assistant Coach (Defensive Line)
+Edwin,Pata,FIU,Florida International University,Assistant Coach - Offensive Line,Assistant Coach (Offensive Line)
+Solomon,Perez,FIU,Florida International University,Graduate Assistant,Graduate Assistant
+Frank,Ponce,FIU,Florida International University,Associate Head Coach/Tight Ends,Associate Head Coach (Tight Ends)
+Willie,Simmons,FIU,Florida International University,Head Coach,Head Coach
+Ryan,Smith,FIU,Florida International University,Assistant Coach - Linebackers,Assistant Coach (Linebackers)
+David,Weeks,FIU,University of Memphis,Co-Offensive Coordinator/Tight Ends,"Assistant Coach (Co-Offensive Coordinator, Tight Ends)"
+Ricky,Brown,Navy,United States Naval Academy,Special Teams Coordinator/Outside Linebackers,"Assistant Coach (Outside Linebackers, Special Teams)"
+David,Cole,Navy,United States Naval Academy,Snipes,Assistant Coach (Snipes)
+Drew,Cronic,Navy,United States Naval Academy,Offensive Coordinator,Assistant Coach (Offensive Coordinator)
+Robert,Green,Navy,United States Naval Academy,Cornerbacks,Assistant Coach (Cornerbacks)
+Jay,Guillermo,Navy,United States Naval Academy,Offensive Line,Assistant Coach (Offensive Line)
+Jerrick,Hall,Navy,United States Naval Academy,Defensive Running Game Coordinator/Defensive Line,"Assistant Coach (Defensive Line, Defensive Running-Game Coordinator)"
+Ivin,Jasper,Navy,United States Naval Academy,Quarterbacks/Running Backs,"Assistant Coach (Quarterbacks, Fullbacks)"
+Tommy,Laurendine,Navy,United States Naval Academy,Offensive Line,Assistant Coach (Offensive Line)
+Eric,Lewis,Navy,United States Naval Academy,Defensive Passing Game Coordinator/Safeties,"Assistant Coach (Safeties, Defensive Pass-Game Coordinator)"
+Brian,Newberry,Navy,United States Naval Academy,Head Coach,Head Coach
+Va'a,Niumatalolo,Navy,United States Naval Academy,Defensive Line,Assistant Coach (Defensive Line)
+P.J.,Volker,Navy,United States Naval Academy,Defensive Coordinator/Linebackers,"Assistant Coach (Defensive Coordinator, Linebackers)"
+Jon,Williams,Navy,United States Naval Academy,Tight Ends,Assistant Coach (Tight Ends)
+Brenten,Wimberly,Navy,United States Naval Academy,Linebackers,Assistant Coach (Linebackers)
+Mick,Yokitis,Navy,United States Naval Academy,Wide Receivers,Assistant Coach (Wide Receivers)
+Ben,Black,North Texas,Illinois State University,Assistant Coach/Defensive Line,Assistant Coach (Defensive Line)
+Jevaughn,Codlin,North Texas,University of Notre Dame,Assistant Coach/Safeties,Assistant Coach (Defensive Line)
+Jeff,Crosby,North Texas,Appalachian State University,Special Teams Coordinator,Assistant Coach (Special Teams)
+Corey,Jordan,North Texas,University of Texas - San Antonio,Assistant Coach/Cornerbacks,Assistant Coach (Safeties)
+BJ,Johnson,Tulsa,Georgia Southern University,Wide Receivers Coach,Assistant Coach (Outside Wide Receivers)
+Hindley,Brigham,UAB,University of Louisiana - Monroe,Assistant Coach,"Assistant Coach (Running Backs, Running-Game Coordinator)"
+Jonathan,Celestin,UAB,University of Alabama - Birmingham,Linebackers,Assistant Coach (Linebackers)
+Kevin,Garver,UAB,University of Alabama - Birmingham,Wide Receivers/Pass Game Coordinator,"Assistant Coach (Wide Receivers, Passing-Game Coordinator)"
+Luke,Godsey,UAB,University of Alabama - Birmingham,Assistant Quarterbacks Coach,Assistant Coach (Quarterbacks)
+Lyle,Henley,UAB,University of Alabama - Birmingham,Assistant Head Coach/Director of Sports Performance,Assistant Head Coach
+Reilly,Jeffers,UAB,University of Alabama - Birmingham,Tight Ends/Recruiting Coordinator - Offense,"Recruiting Coordinator (Offense), Assistant Coach (Tight Ends)"
+John,Jones,UAB,University of Alabama - Birmingham,Special Teams Coordinator/Defensive Ends,"Assistant Coach (Defensive Ends, Special Teams)"
+Matt,McCants,UAB,University of Alabama - Birmingham,Offensive Line,Assistant Coach (Offensive Line)
+Sam,Mills III,UAB,University of Alabama - Birmingham,Defensive Line,Assistant Coach (Defensive Line)
+Danny,Mitchell,UAB,University of Alabama - Birmingham,Running Backs/Run Game Coordinator,"Assistant Coach (Running Backs, Running-Game Coordinator)"
+Alex,Mortensen,UAB,University of Alabama - Birmingham,Head Coach,Head Coach
+Gordon,Steele,UAB,University of Alabama - Birmingham,Assistant Offensive Line Coach,Assistant Coach (Offensive Line)
+Brent,Vieselmeyer,UAB,University of Alabama - Birmingham,Secondary/Pass Game Coordinator,"Assistant Coach (Defensive Backs, Passing Game Coordinator)"
+Josh,Aldridge,USF,University of South Florida,Defensive Coordinator/Inside Linebackers,"Assistant Coach (Defensive Coordinator, Inside Linebackers)"
+Tim,Beck,USF,University of South Florida,Offensive Coordinator,Assistant Coach (Offensive Coordinator)
+Elijah,Brooks,USF,University of South Florida,Running Backs Coach,Assistant Coach (Running Backs)
+Chad,Creamer,USF,University of South Florida,Special Teams Coordinator/Outside Linebackers Coach,"Assistant Coach (Outside Linebackers, Special Teams)"
+Mike,Hartline,USF,University of South Florida,Quarterbacks Coach,Assistant Coach (Quarterbacks)
+Brian,Hartline,USF,University of South Florida,Head Football Coach,Head Coach
+Keith,Jones Jr.,USF,Appalachian State University,Defensive Line Coach,Assistant Coach (Defensive Line)
+James,Rowe,USF,University of South Florida,Cornerbacks Coach,"Assistant Coach (Safeties, Defensive Pass-Game Coordinator)"
+Mike,Sollenne,USF,University of South Florida,Run Game Coordinator/Offensive Line Coach,"Assistant Coach (Offensive Line, Offensive Running-Game Coordinator)"
+Danny,Verpaele,USF,University of South Florida,Safeties Coach,Assistant Coach (Safeties)
+Myles,White,USF,University of South Florida,Wide Receivers Coach,Assistant Coach (Wide Receivers)
+Rick,Bowie,UTSA,Western Kentucky University,Offensive Coordinator,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Zach,Brown,UTSA,University of Texas - San Antonio,Special Teams Coordinator/Nickels,"Assistant Coach (Nickelbacks, Special Teams)"
+Nick,Graham,UTSA,University of Texas - San Antonio,Assistant Head Coach/Cornerbacks,Assistant Head Coach (Cornerbacks)
+Jess,Loepp,UTSA,University of Texas - San Antonio,Defensive Coordinator/Safeties,"Assistant Coach (Defensive Coordinator, Safeties)"
+Tommie,Robinson,UTSA,University of Texas - San Antonio,Running Backs/NFL Liaison,"Assistant Coach (Running Backs), NFL Liaison"
+Galen,Scott,UTSA,University of Texas - San Antonio,Defensive Pass Game Coordinator/Linebackers,"Assistant Coach (Linebackers, Defensive Passing-Game Coordinator)"
+Jeff,Traylor,UTSA,University of Texas - San Antonio,Head Coach,Head Coach
+Kurt,Traylor,UTSA,University of Texas - San Antonio,Run Game Coordinator/Offensive Line,"Assistant Coach (Offensive Line, Running-Game Coordinator)"
+Adrian,Klemm,Boston College,University of Southern California,Associate Head Coach,Assistant Coach (Defense)
+Andrew,Browning,California,University of California - Berkeley,Inside Linebackers,"Assistant Coach (Defensive Line, Defensive Running-Game Coordinator)"
+Angus,McClure,California,California State University - Sacramento,Offensive Line,Associate Head Coach (Offensive Line)
+Matt,Guerrieri,Clemson,Ohio State University,Defensive Ends,"Assistant Coach (Safeties, Passing-Game Coordinator"
+Matt,Guerrieri,Duke,Ohio State University,Defensive Coordinator,"Assistant Coach (Safeties, Passing-Game Coordinator"
+Alex,Atkins,Florida State,Louisiana State University (LSU),Offensive Line,"Assistant Coach (Tight Ends, Running-Game Coordinator)"
+Buster,Faulkner,Georgia Tech,University of Florida,Offensive Coordinator,Assistant Coach (Offensive Coordinator)
+Travaris,Robinson,Georgia Tech,University of Georgia,Defensive Backs,"Assistant Coach (Co-Defensive Coordinator, Safeties)"
+Josh,Crawford,Louisville,University of Georgia,Offensive Coordinator,Assistant Coach (Running Backs)
+Kenny,Guiton,Louisville,University of Wisconsin,Running Backs,Assistant Coach (Quarterbacks)
+Derek,Nicholson,Louisville,University of Missouri,Linebackers,Assistant Coach (Linebackers)
+Joe,Rudolph,Louisville,University of Notre Dame,Offensive Line,Assistant Coach (Offensive Line)
+Mario,Cristobal,Miami (FL),University of Miami,Head Coach,Head Coach
+Shannon,Dawson,Miami (FL),University of Miami,Offensive Coordinator,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Corey,Hetherman,Miami (FL),University of Miami,Defensive Coordinator,"Assistant Coach (Defensive Coordinator, Linebackers)"
+Alex,Mirabal,Miami (FL),University of Miami,Offensive Line,Assistant Coach (Offensive Line)
+Frank,Ponce,Miami (FL),Florida International University,Quarterbacks,Associate Head Coach (Tight Ends)
+Marcus,Satterfield,Miami (FL),University of Nebraska,Passing Game Coordinator,Assistant Coach (Tight Ends)
+Kevin,Smith,Miami (FL),University of Mississippi,Running Backs,Assistant Coach (Running Backs)
+Justin,Stepp,Miami (FL),University of Illinois,External Affairs/Wide Receivers,Assistant Coach (Wide Receivers)
+Jason,Taylor,Miami (FL),University of Miami,Senior Defensive Analyst,Assistant Coach (Defensive Line)
+Dave,Doeren,NC State,North Carolina State University,Head Coach,Head Coach
+DJ,Eliot,NC State,North Carolina State University,Defensive Coordinator,"Assistant Coach (Defensive Coordinator, Linebackers)"
+Todd,Goebbel,NC State,North Carolina State University,Special Teams Coordinator,"Assistant Coach (Running Backs, Special Teams)"
+Blake,Harrell,NC State,East Carolina University,Safeties,Head Coach
+Joker,Phillips,NC State,North Carolina State University,Wide Receivers,Assistant Head Coach (Wide Receivers)
+Kurt,Roper,NC State,North Carolina State University,Offensive Coordinator,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+A'Lique,Terry,NC State,University of Oregon,Tight Ends,Assistant Coach (Offensive Line)
+Charley,Wiles,NC State,North Carolina State University,Defensive Line,Assistant Coach (Defensive Line)
+Steve,Belichick,North Carolina,University of North Carolina at Chapel Hill,Defensive Coordinator,"Assistant Coach (Defensive Coordinator, Linebackers)"
+Bill,Belichick,North Carolina,University of North Carolina at Chapel Hill,Head Coach,Head Coach
+DJ,Durkin,North Carolina,Auburn University,Inside Linebackers,"Assistant Coach (Defensive Coordinator, Linebackers)"
+David,Rowe,North Carolina,Rutgers University,Tight Ends,Assistant Coach (Cornerbacks)
+Brian,Smith,North Carolina,Temple University,Outside Linebackers,"Assistant Coach (Defensive Coordinator, Safeties)"
+Harlon,Barnett,Pittsburgh,Northwestern University,Defensive Backs,Assistant Head Coach (Safeties)
+Brennan,Marion,Pittsburgh,University of Colorado - Boulder,Passing Game Coordinator,Assistant Coach (Offensive Coordinator)
+Marc,Mattioli,Pittsburgh,Kennesaw State University,Offensive Line,Assistant Coach (Defensive Coordinator)
+Andre,Powell,Pittsburgh,University of Maryland,Running Backs,Assistant Coach (Special Teams)
+Garin,Justice,SMU,Southern Methodist University,Offensive Line,"Assistant Head Coach (Co-Offensive Coordinator, Offensive Line)"
+Rhett,Lashlee,SMU,Southern Methodist University,Head Coach,Head Coach
+Ra'Shaad,Samples,SMU,University of Oregon,Wide Receivers,Assistant Head Coach (Running Backs)
+Scott,Symons,SMU,Southern Methodist University,Defensive Coordinator,"Assistant Coach (Defensive Coordinator, Safeties)"
+Casey,Woods,SMU,Southern Methodist University,Offensive Coordinator,"Assistant Coach (Offensive Coordinator, Tight Ends)"
+Dowell,Loggains,Stanford,Appalachian State University,Offensive Coordinator,Head Coach
+Mark,Tommerdahl,Stanford,Texas Christian University,Tight Ends,Assistant Coach (Special Teams)
+Justin,Lustig,Syracuse,Penn State,Special Teams,Assistant Coach (Special Teams)
+Nick,Monroe,Syracuse,University of Minnesota,Tight Ends,"Assistant Coach (co-Defensive Coordinator, Cornerbacks)"
+James,Rowe,Syracuse,University of South Florida,Offensive Line,"Assistant Coach (Safeties, Defensive Pass-Game Coordinator)"
+Doug,Belk,Virginia Tech,University of Southern California,Head Coach,Assistant Coach (Defensive Backs)
+Tyler,Bowen,Virginia Tech,Ohio State University,Offensive Coordinator,Assistant Coach
+Jeff,Beckles,Wake Forest,University of Massachusetts - Amherst,Wide Receivers,Assistant Coach (Running Backs)
+Kevin,Higgins,Wake Forest,Appalachian State University,Running Backs,Assistant Coach (Passing-Game Specialist)
+Brad,Lambert,Wake Forest,Marshall University,Defensive Coordinator,Assistant Coach (Defensive Coordinator)
+Xavier,Garcia,Sul Ross State,Jacksonville State University,Assistant Coach / Tight Ends / Fullbacks,Assistant Coach (Defensive Line)
+Justin,Ena,BYU,Brigham Young University,Linebackers Coach,Assistant Coach (Linebackers)
+Gavin,Fowler,BYU,Brigham Young University,Assistant Safeties Coach,Assistant Coach (Safeties)
+Kevin,Gilbride,BYU,Brigham Young University,Tight Ends Coach,Assistant Coach (Tight Ends)
+Jernaro,Gilford,BYU,Brigham Young University,Defensive Passing Game Coordinator / Cornerbacks Coach,"Assistant Coach (Cornerbacks, Defensive Passing-Game Coordinator)"
+Jay,Hill,BYU,University of Michigan,Associate Head Coach / Defensive Coordinator / Safeties Coach,Assistant Coach (Defensive Coordinator)
+Tyson,McDaniel,BYU,Brigham Young University,Assistant Tight Ends Coach,Assistant Coach (Tight Ends)
+Matt,Mitchell,BYU,Brigham Young University,Senior Analyst,Assistant Coach (Quarterbacks)
+Sione,Po'uha,BYU,Brigham Young University,Defensive Tackles Coach,Assistant Coach (Defensive Tackles)
+Kelly,Poppinga,BYU,Brigham Young University,Special Teams Coordinator / Defensive Ends Coach,"Assistant Coach (Defensive Ends, Special Teams)"
+Aaron,Roderick,BYU,Brigham Young University,Offensive Coordinator / Quarterbacks Coach,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Kalani,Sitake,BYU,Brigham Young University,Head Coach,Head Coach
+Fesi,Sitake,BYU,Brigham Young University,Passing Game Coordinator / Wide Receivers Coach,"Assistant Coach (Wide Receivers, Passing-Game Coordinator)"
+Harvey,Unga,BYU,Brigham Young University,Running Backs Coach,Assistant Coach (Running Backs)
+TJ,Woods,BYU,Brigham Young University,Run Game Coordinator / Offensive Line Coach,"Assistant Coach (Offensive Line, Running-Game Coordinator)"
+Nick,Lamattina,Cincinnati,Western Kentucky University,Director of Player Personnel,Director of Recruiting
+David,Rowe,Cincinnati,Rutgers University,Assistant Coach / Cornerbacks,Assistant Coach (Cornerbacks)
+Brad,Wittke,Cincinnati,Syracuse University,Chief of Staff,Director of Operations
+Nate,Woody,Cincinnati,United States Military Academy,Defensive Coordinator,Assistant Coach (Defensive Coordinator)
+Brett,Bartolone,Colorado,University of Colorado - Boulder,Offensive Pass Game Coordinator/Tight Ends,"Graduate Assistant (Tight Ends, Offensive Passing-Game Coordinator)"
+Andre,Gurode,Colorado,University of Colorado - Boulder,Assistant Coach/Offensive Line,Assistant Coach (Offensive Line)
+Andre',Hart,Colorado,University of Colorado - Boulder,Assistant Coach/Linebackers,Assistant Coach (Linebackers)
+George,Hegamin,Colorado,University of Colorado - Boulder,Assistant Coach/Offensive Line,Assistant Coach (Offensive Line)
+George,Helow,Colorado,University of Colorado - Boulder,Defensive Run Game Coordinator/Defensive Ends,"Assistant Coach (Defensive Ends, Defensive Running-Game Coordinator)"
+Robert,Livingston,Colorado,University of Colorado - Boulder,Defensive Coordinator/Safeties,"Assistant Coach (Defensive Coordinator, Safeties)"
+Brennan,Marion,Colorado,University of Colorado - Boulder,Offensive Coordinator,Assistant Coach (Offensive Coordinator)
+Kevin,Mathis,Colorado,University of Colorado - Boulder,Defensive Passing Game Coordinator/Cornerbacks,"Assistant Coach (Cornerbacks, Defensive Passing-Game Coordinator)"
+Domata,Peko,Colorado,University of Colorado - Boulder,Assistant Coach/Defensive Line,Assistant Coach (Defensive Line)
+Jason,Phillips,Colorado,University of Colorado - Boulder,Assistant Coach/Wide Receivers,Assistant Coach (Wide Receivers)
+Michael,Pollock,Colorado,University of Colorado - Boulder,Assistant Coach/Special Teams Coordinator,Assistant Coach (Special Teams)
+Deion,Sanders,Colorado,University of Colorado - Boulder,Head Football Coach,Head Coach
+Gunnar,White,Colorado,University of Colorado - Boulder,Offensive Run Game Coordinator/Offensive Line,"Assistant Coach (Offensive Line, Offensive Running-Game Coordinator)"
+Marcus,Trice,Houston,Stephen F Austin State University,Cornerbacks,"Recruiting Coordinator (Defense), Assistant Coach (Cornerbacks)"
+Sean,Gleeson,Kansas State,University of Missouri,Offensive Coordinator,Assistant Coach (Quarterbacks)
+Andy,Avalos,TCU,Texas Christian University,Defensive Coordinator,Assistant Coach (Defensive Coordinator)
+Julius,Brown,TCU,Texas Christian University,Cornerbacks Coach,Assistant Coach (Cornerbacks)
+Sonny,Dykes,TCU,Texas Christian University,Head Coach,Head Coach
+Malcolm,Kelly,TCU,Texas Christian University,Assistant Head Coach / Wide Receivers Coach,Assistant Head Coach (Wide Receivers)
+Mitch,Kirsch,TCU,Texas Christian University,Tight Ends Coach,Assistant Coach (Tight Ends)
+JaMarkus,McFarland,TCU,Texas Christian University,Defensive Line Coach,Assistant Coach (Defensive Line)
+Brad,Robbins,TCU,University of Tulsa,Quarterbacks Coach,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Tre,Watson,TCU,Texas Christian University,Safeties/Nickels Coach / Passing Game Coordinator,"Assistant Coach (Safeties, Nickelbacks, Defensive Passing-Game Coordinator)"
+Ken,Wilson,TCU,Texas Christian University,Linebackers Coach,Assistant Coach (Linebackers)
+Jimmy,Beal,UCF,University of Central Florida,Running Backs,Assistant Coach (Running Backs)
+Sean,Beckton Sr.,UCF,University of Central Florida,Associate Head Coach/Wide Receivers,Associate Head Coach (Wide Receivers)
+Steve,Cooper,UCF,University of Central Florida,Offensive Coordinator,"Assistant Coach (Offensive Coordinator, Tight Ends)"
+Mark,D'Onofrio,UCF,University of Central Florida,Linebackers,Assistant Coach (Linebackers)
+Mike,Dawson,UCF,University of Central Florida,Defensive Run Game Coordinator/Edge Coach,"Assistant Coach (Edge Rushers, Defensive Running-Game Coordinator)"
+Scott,Frost,UCF,University of Central Florida,Head Coach,Head Coach
+Alex,Grinch,UCF,University of Central Florida,Defensive Coordinator/Safeties,"Assistant Coach (Defensive Coordinator, Safeties)"
+Will,Johnson,UCF,North Dakota State University,Defensive Backs,Assistant Coach (Cornerbacks)
+Kenny,Martin,UCF,University of Central Florida,Defensive Tackles,Assistant Coach (Defensive Tackles)
+McKenzie,Milton,UCF,University of Central Florida,Quarterbacks,Assistant Coach (Quarterbacks)
+Kevin,McGiven,Utah,Utah State University,Offensive Coordinator,Assistant Coach (Offensive Coordinator)
+Larry,Knight,West Virginia,Arkansas State University,Edges/Pass Rush Specialist,"Assistant Coach (Defensive Ends, Defensive Running-Game Coordinator)"
+Rick,Trickett,West Virginia,Jacksonville State University,Offensive Line Coach,Assistant Coach (Offensive Line)
+Spencer,Treadwell,Idaho,Eastern Illinois University,Running Backs Coach,"Recruiting Coordinator, Assistant Coach (Running Backs)"
+Trenton,Greene,Northern Arizona,Montana State University,Defensive Coordinator/Safeties Coach,Assistant Coach (Cornerbacks)
+Kiante,Goudeau,Portland State,Montana State University,Cornerbacks Coach,Assistant Coach (Defensive Backs)
+Dominick,Mazotti,Portland State,Mercyhurst University,Tight Ends Coach,Assistant Coach (Offense)
+Otis,Amey,Sacramento State,California State University - Sacramento,Director of Player Development/Alumni Relations,Director of Player Development
+Milo,Austin,Sacramento State,California State University - Sacramento,Special Teams Coordinator,Assistant Coach (Special Teams)
+Josh,Brown,Sacramento State,California State University - Sacramento,Safeties/Def. Pass Game Coordinator,"Assistant Coach (Safeties, Defensive Passing-Game Coordinator)"
+Alonzo,Carter,Sacramento State,California State University - Sacramento,Head Coach,Head Coach
+Adam,Clark,Sacramento State,California State University - Sacramento,Defensive Coordinator,Assistant Coach (Defensive Coordinator)
+Bobby,Fresques,Sacramento State,California State University - Sacramento,Quarterbacks/Passing Game Coordinator/Camp Coordinator,"Assistant Coach (Quarterbacks, Passing-Game Coordinator)"
+Eric,Kiesau,Sacramento State,California State University - Sacramento,Offensive Coordinator,Assistant Coach (Offensive Coordinator)
+Angus,McClure,Sacramento State,California State University - Sacramento,Associate Head Coach/Recruiting Coordinator/Offensive Line,Associate Head Coach (Offensive Line)
+Dakari,Monroe,Sacramento State,University of Arizona,Cornerbacks,Assistant Coach (Defense)
+Jon,Osterhout,Sacramento State,California State University - Sacramento,General Manager,General Manager
+Chris,Parry,Sacramento State,California State University - Sacramento,Assistant GM/Pro Liaison,Assistant General Manager
+CJ,Pollard,Sacramento State,California State University - Sacramento,Director of Recruiting,Director of Recruiting (second email)
+Kris,Richardson,Sacramento State,California State University - Sacramento,Run Game Coordinator/Offensive Line,"Assistant Coach (Offensive Line, Running-Game Coordinator)"
+Eric,Scott,Sacramento State,California State University - Sacramento,Co-Offensive Coordinator/Wide Receivers,Assistant Coach (Wide Receivers)
+Kenwick,Thompson,Sacramento State,California State University - Sacramento,Assistant Head Coach/Co-Defensive Coordinator/Linebackers,"Assistant Head Coach (Linebackers, Co-Defensive Coordinator)"
+Jerry,Brady,UC Davis,University of California - Davis,Jane and Fred Arp Defensive Line Coach,Assistant Coach (Defensive Line)
+Kevin,Burke,UC Davis,University of California - Davis,Assistant Coach (Running Backs),Assistant Coach (Running Backs)
+Taylor,Chapatte,UC Davis,University of California - Davis,Special Teams Coordinator (Tight Ends),"Assistant Coach (Tight Ends, Special Teams)"
+Mike,Cody,UC Davis,University of California - Davis,Assistant Coach (Offensive Line),Assistant Coach (Offensive Line)
+Matt,Coombs,UC Davis,University of California - Davis,Defensive Coordinator,Assistant Coach (Defensive Coordinator)
+Evan,Hicks,UC Davis,University of California - Davis,Assistant Coach (Safeties),Assistant Coach (Safeties)
+DuMaurier,Jordan,UC Davis,University of California - Davis,Assistant Coach (Cornerbacks),Assistant Coach (Cornerbacks)
+Tim,Plough,UC Davis,University of California - Davis,Head Coach,Head Coach
+Stiles,Satterlee,UC Davis,University of California - Davis,Assistant Coach (Offense),Assistant Coach (Offense)
+Paul,Shelton,UC Davis,University of California - Davis,Offensive Coordinator,Assistant Coach (Offensive Coordinator)
+Trey,Shimabukuro,UC Davis,University of California - Davis,Assistant Coach (Wide Receivers),Assistant Coach (Wide Receivers)
+Austin,Taylor,UC Davis,University of California - Davis,Assistant Coach (Inside Linebackers),Assistant Coach (Inside Linebackers)
+Gavin,Fowler,Weber State,Brigham Young University,Defensive Coordinator/Safeties,Assistant Coach (Safeties)
+Tana,Vea,Weber State,San Diego State University,Assistant Coach/Running Backs/Recruiting Coordinator,Recruiting Coordinator (second email)
+Chip,Lindsey,Michigan,University of Missouri,Offensive Coordinator / Quarterbacks Coach,Assistant Coach (Offensive Coordinator)
+Ted,Flaherty,Michigan State,University of Dayton,Assistant Secondary Coach,Assistant Coach (Defensive Backs)
+Josh,Robinson,Michigan State,Northern Arizona University,Assistant Special Teams Coordinator,Assistant Coach (Special Teams)
+Dominic,Spalding,Michigan State,University of Notre Dame,Assistant Wide Receivers Coach,Assistant Coach (Wide Receivers)
+Daniel,Da Prato,Minnesota,University of New Mexico,Special Teams Coordinator,Associate Head Coach (Special Teams)
+Isaac,Fruechte,Minnesota,University of North Dakota,Wide Receivers Coach,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Mohamed,Ibrahim,Minnesota,Kent State University,Running Backs Coach,Assistant Coach (Running Backs)
+Travis,Moore,Minnesota,Northern Illinois University,Assistant Defensive Line Coach,Assistant Coach (Defensive Line)
+Bryan,Nardo,Minnesota,University of North Carolina at Charlotte,Senior Defensive Assistant,Assistant Coach (Safeties)
+Roy,Manning,Nebraska,San Diego State University,Assistant Coach - Defensive Edges,Assistant Coach (Edge Rushers)
+Brian,Hartline,Ohio State,University of South Florida,Wide Receivers,Head Coach
+Chip,Kelly,Ohio State,Northwestern University,Offensive Coordinator,Assistant Coach (Offensive Coordinator)
+Jim,Knowles,Ohio State,University of Tennessee,Defensive Coordinator,Assistant Coach (Defensive Coordinator)
+Tosh,Lupoi,Oregon,University of California - Berkeley,Defensive Coordinator / Linebackers,Head Coach
+Will,Stein,Oregon,University of Kentucky,Offensive Coordinator / Quarterbacks,Head Coach
+Savon,Huggins,Penn State,Boston College,Running Backs,Assistant Coach (Running Backs)
+Christian,Smith,Penn State,Northwestern University,Edge Rushers,Assistant Coach (Defensive Line)
+Tyson,Veidt,Penn State,University of Cincinnati,Linebackers,"Assistant Coach (Defensive Coordinator, Safeties)"
+Zach,Crabtree,Purdue,California State University - Fresno,Offensive Line,Assistant Coach (Offensive Line)
+Kevin,Kane,Purdue,University of Minnesota,Defensive Coordinator / Linebackers,"Assistant Coach (Nickelbacks, Outside Linebackers)"
+Bob,Chesney,UCLA,University of California - Los Angeles - UCLA,Head Coach,Head Coach
+Colin,Lockett,UCLA,University of New Mexico,Wide Receivers,Assistant Coach (Wide Receivers)
+Chris,Smith,UCLA,Stephen F Austin State University,Offensive Line / Run Game Coordinator,"Assistant Coach (Defensive Backs), Director of Player Development"
+Vic,So'oto,UCLA,University of California - Berkeley,Linebackers,"Assistant Coach (Co-Defensive Coordinator, Outside Linebackers)"
+A.J.,Steward,UCLA,University of California - Los Angeles - UCLA,Running Backs,Assistant Coach (Running Backs)
+Doug,Belk,USC,University of Southern California,Secondary Coach,Assistant Coach (Defensive Backs)
+Ryan,Dougherty,USC,University of Southern California,Special Teams Coordinator,Assistant Coach (Special Teams)
+Zach,Hanson,USC,University of Southern California,Assistant Head Coach / Offensive Line,"Assistant Head Coach (Offensive Line, Offense)"
+Eric,Henderson,USC,University of Southern California,Co-Defensive Coordinator / Defensive Line,"Assistant Coach (Co-Defensive Coordinator, Defensive Line, Defensive Running-Game Coordinator)"
+Luke,Huard,USC,University of Southern California,Offensive Coordinator / Quarterbacks,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Anthony,Jones Jr.,USC,University of Southern California,Running Backs / Run Game Coordinator,"Assistant Coach (Running Backs, Running-Game Coordinator)"
+D'Anton,Lynn,USC,Penn State,Defensive Coordinator,Assistant Coach (Defensive Coordinator)
+Shaun,Nua,USC,University of Southern California,Defensive End Coach,Assistant Coach (Defensive Ends)
+Trovon,Reed,USC,University of Southern California,Cornerbacks Coach,Assistant Coach (Cornerbacks)
+Lincoln,Riley,USC,University of Southern California,Head Coach,Head Coach
+Rob,Ryan,USC,University of Southern California,Assistant Head Coach / Linebackers,"Assistant Head Coach (Linebackers, Defense)"
+Chad,Savage,USC,University of Southern California,Tight Ends / Inside Receivers,Assistant Coach (Tight Ends)
+Dennis,Simmons,USC,University of Southern California,Assistant Head Coach / Wide Receivers / Passing Game Coordinator,"Assistant Head Coach (Wide Receivers, Offensive Passing-Game Coordinator)"
+Jayden,Everett,Wisconsin,University of Minnesota,Running Backs,Assistant Coach (Running Backs)
+Brandon,Butcher,Campbell,University of Texas - El Paso,Defensive Coordinator,Assistant Coach (Linebackers)
+Jalen,Hairston,Elon,University of Maine,Assistant Football Coach (Cornerbacks),"Assistant Coach (Safeties, Defensive Passing-Game Coordinator)"
+JB,Lageman,Elon,Virginia Military Institute - VMI,Assistant Football Coach (Defensive Line),"Assistant Coach (Defensive Line, Running-Game Coordinator)"
+Sean,Goldrich,New Hampshire,University of Delaware,Head Coach,"Recruiting Coordinator, Assistant Coach (Quarterbacks, Passing-Game Coordinator)"
+Courtney,Coard,North Carolina A&T,North Carolina A&T State University,Assistant Head Coach/Defensive Line/Pro Liaison,"Pro Liaison, Assistant Head Coach (Defensive Line)"
+Shawn,Gibbs,North Carolina A&T,North Carolina A&T State University,Head Coach,Head Coach
+Keith,Henry,North Carolina A&T,North Carolina A&T State University,Running Backs,Assistant Coach (Running Backs)
+Denzel,Jones,North Carolina A&T,North Carolina A&T State University,Defensive Coordinator/Linebackers,"Assistant Coach (Defensive Coordinator, Linebackers)"
+Terry,Lantz,North Carolina A&T,North Carolina A&T State University,Outside Linebackers,Assistant Coach (Outside Linebackers)
+Ron,Mattes,North Carolina A&T,North Carolina A&T State University,Offensive Line,Assistant Coach (Offensive Line)
+Greg,McGhee,North Carolina A&T,North Carolina A&T State University,Offensive Coordinator/Quarterbacks,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Tony,McRae,North Carolina A&T,North Carolina A&T State University,Defensive Backs/Pro Liaison,"Assistant Coach (Defensive Backs), Pro Liaison"
+Nate,Poole,North Carolina A&T,North Carolina A&T State University,Wide Receivers/Recruiting Coordinator,"Recruiting Coordinator, Assistant Coach (Wide Receivers)"
+Alex,Purviance,North Carolina A&T,North Carolina A&T State University,Tight Ends,Assistant Coach (Tight Ends)
+Chris,Bache,Stony Brook,SUNY Stony Brook University,Offensive Line Coach,Assistant Coach (Offensive Line)
+Billy,Barber,Stony Brook,SUNY Stony Brook University,Director of Football Operations,Director of Operations
+Billy,Cosh,Stony Brook,SUNY Stony Brook University,Head Coach,Head Coach
+Anthony,Davis II,Stony Brook,SUNY Stony Brook University,Offensive Coordinator/Wide Receivers Coach,"Assistant Coach (Offensive Coordinator, Wide Receivers)"
+Kevin,Elliott,Stony Brook,SUNY Stony Brook University,Special Teams Coordinator/Outside Linebackers Coach,"Assistant Coach (Outside Linebackers, Special Teams)"
+Sean,Hammonds,Stony Brook,SUNY Stony Brook University,Defensive Line Coach/Defensive Recruiting Coordinator,"Recruiting Coordinator (Defense), Assistant Coach (Defensive Line)"
+Scott,Lewis,Stony Brook,SUNY Stony Brook University,Defensive Coordinator/Inside Linebackers Coach,"Assistant Coach (Defensive Coordinator, Inside Linebackers)"
+Adam,Lovan,Stony Brook,SUNY Stony Brook University,Quarterbacks Coach/Offensive Recruiting Coordinator,"Recruiting Coordinator (Offense), Assistant Coach (Quarterbacks)"
+Steve,Martino,Stony Brook,SUNY Stony Brook University,Tight Ends Coach/Run Game Coordinator,"Assistant Coach (Tight Ends, Running-Game Coordinator)"
+Damian,Mincey,Stony Brook,SUNY Stony Brook University,Running Backs Coach,Assistant Coach (Running Backs)
+Jim,Nelson,Stony Brook,SUNY Stony Brook University,Safeties Coach,Assistant Coach (Safeties)
+Matt,Oehl,Stony Brook,SUNY Stony Brook University,Recruiting Coordinator/Director of Player Personnel,"Recruiting Coordinator, Director of Player Personnel"
+Ryan,Bitka,UAlbany,SUNY University at Albany,Offensive Quality Control,Assistant Coach (Offense)
+Chris,Calabrese,UAlbany,SUNY University at Albany,Defensive Line Coach / Player Personnel / Pro Liaison,"Director of Player Personnel, Assistant Coach (Outside Linebackers, Defensive Ends), Pro Liaison"
+Will,Fiacchi,UAlbany,SUNY University at Albany,Wide Receivers Coach,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Karl,Mofor,UAlbany,Western Illinois University,Running Backs Coach,Assistant Coach (Running Backs)
+Jordan,Orlovsky,UAlbany,SUNY University at Albany,Chief of Staff / Director of Operations / Recruiting Coordinator,"Assistant Coach (Running Backs, Special Teams)"
+Sean,Pearson,UAlbany,Bucknell University,Offensive Line Coach,Assistant Coach (Offensive Line)
+Jack,Armstrong,William & Mary,College of William & Mary,Offensive Line Coach/Run Game Coordinator,"Assistant Coach (Offensive Line, Running-Game Coordinator)"
+Darryl,Blackstock,William & Mary,College of William & Mary,Special Teams Coordinator/Outside Linebackers Coach,"Assistant Coach (Outside Linebackers, Special Teams)"
+Keenan,Carter,William & Mary,College of William & Mary,Defensive Line Coach/Recruiting Coordinator,"Recruiting Coordinator, Assistant Coach (Defensive Line)"
+Ras-I,Dowling,William & Mary,College of William & Mary,Co-Defensive Coordinator/Secondary Coach,"Assistant Coach (Co-Defensive Coordinator, Defensive Backs)"
+Kevin,Jarrell,William & Mary,College of William & Mary,Outside Linebackers/Nickels Coach,"Assistant Coach (Outside Linebackers, Nickelbacks)"
+Perry,Jones,William & Mary,College of William & Mary,Running Backs Coach/Video Coordinator,Assistant Coach (Running Backs)
+Mike,London,William & Mary,College of William & Mary,Head Coach,Head Coach
+Winston,October,William & Mary,College of William & Mary,Offensive Coordinator/Wide Receivers Coach,"Assistant Coach (Offensive Coordinator, Wide Receivers)"
+Bryan,Randall,William & Mary,College of William & Mary,Quarterbacks Coach,Assistant Coach (Quarterbacks)
+Bo,Revell,William & Mary,College of William & Mary,Co-Defensive Coordinator/Inside Linebackers Coach,"Assistant Coach (Co-Defensive Coordinator, Inside Linebackers)"
+Charles,Huff,Fayetteville State,University of Memphis,Defensive Line,Head Coach
+James,Adams,Virginia Union,Michigan State University,Offensive Coordinator/Quarterbacks,Assistant Coach (Safeties)
+Torrian,Gray,Virginia Union,University of South Carolina,Defensive Coordinator,"Assistant Coach (Defensive Backs, Defensive Passing-Game Coordinator)"
+Anthony,Johnson,Virginia Union,University of Nebraska,Special Teams Coordinator,Recruiting Coordinator
+David,Johnson,Winston-Salem State,University of Arkansas,Offensive Coordinator/Quarterbacks,Assistant Coach (Running Backs)
+Adam,Ross,Jacksonville State,Murray State University,Offensive Line,"Assistant Coach (Co-Offensive Coordinator, Offensive Line)"
+Dylan,Barnett,Middle Tennessee,Middle Tennessee State University,Offensive Quality Control,Assistant Coach (Interim Offensive Line)
+Christopher,Browne,Middle Tennessee,Middle Tennessee State University,Offensive Line,Assistant Coach (Offensive Line)
+Louie,Cioffi,Middle Tennessee,Middle Tennessee State University,Co-Special Teams Coordinator,Assistant Coach (Co-Special Teams)
+Coley,Crowley,Middle Tennessee,Middle Tennessee State University,Inside Receivers,Assistant Coach (Wide Receivers)
+Joe,Ganz,Middle Tennessee,Middle Tennessee State University,Quarterbacks,Assistant Coach (Tight Ends)
+Bryce,Lewis,Middle Tennessee,Middle Tennessee State University,Secondary,Assistant Coach (Defensive Backs)
+Calvin,Lowry,Middle Tennessee,Middle Tennessee State University,Outside Receivers,"Assistant Coach (Running Backs, Running-Game Coordinator)"
+Derek,Mason,Middle Tennessee,Middle Tennessee State University,Head Coach,Head Coach
+Tyler,Monaco,Middle Tennessee,Middle Tennessee State University,Offensive GA,Graduate Assistant (Offense)
+A.J.,Reisig,Middle Tennessee,Middle Tennessee State University,Linebackers,Assistant Coach (Linebackers)
+Anthony,Scelfo,Middle Tennessee,Middle Tennessee State University,Offensive Coordinator,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Brian,Stewart,Middle Tennessee,Middle Tennessee State University,Asst. Head Coach/Defensive Coordinator,Assistant Head Coach (Defensive Coordinator)
+Josh,Wegrzyn,Middle Tennessee,Middle Tennessee State University,Defensive GA,Graduate Assistant (Defense)
+John,Bonney,Missouri State,Southern Methodist University,Assistant Coach Defense,Assistant Coach (Safeties)
+Mark,Cala,Missouri State,University of Texas - El Paso,Offensive Coordinator,Assistant Coach (Offensive Coordinator)
+Tyler,Foster,Missouri State,Southern Methodist University,Assistant Coach Offense,Assistant Coach (Running Backs)
+Sam,Hullender,Missouri State,Southern Methodist University,Assistant Coach Offense,Assistant Coach (Quarterbacks)
+Brett,Kulka,Missouri State,Auburn University,Assistant Coach Defense,Assistant Coach (Defensive Line)
+Hussam,Ouri,Missouri State,Southern Methodist University,Assistant Coach Offense,Assistant Coach (Inside Linebackers)
+Jacoby,Walker,Missouri State,Prairie View A & M University,Assistant Coach Offense,"Recruiting Coordinator, Assistant Coach (Wide Receivers)"
+Damien,Adams,Sam Houston,Sam Houston State University,Defensive Tackles,Assistant Coach (Defensive Tackles)
+Freddie,Aughtry-Lindsay,Sam Houston,Sam Houston State University,Defensive Coordinator,Assistant Coach (Defensive Coordinator)
+Dovonte,Edwards,Sam Houston,Sam Houston State University,Safeties,Assistant Coach (Safeties)
+AJ,Hopp,Sam Houston,Sam Houston State University,Offensive Line,Assistant Coach (Offensive Line)
+Phil,Longo,Sam Houston,Sam Houston State University,Head Coach,Head Coach
+Gary,McGraw,Sam Houston,Sam Houston State University,Cornerbacks,Assistant Coach (Cornerbacks)
+Issac,Mooring,Sam Houston,Sam Houston State University,Edges,Assistant Coach (Edge Rushers)
+Zack,Patterson,Sam Houston,Sam Houston State University,Offensive Coordinator,Assistant Coach (Offensive Coordinator)
+Eric,Raisbeck,Sam Houston,Sam Houston State University,Associate Head Coach/Special Teams Coordinator/Slot Receivers,"Associate Head Coach (Inside Wide Receivers, Special Teams)"
+Keyan,Williams,Sam Houston,Sam Houston State University,Wide Receivers,Assistant Coach (Wide Receivers)
+Ryan,Williams,Arkansas-Monticello,Georgia State University,Graduate Assistant / Offensive Line,Assistant Coach (Quarterbacks)
+Josh,Miller,Ouachita Baptist,University of Arizona,Safeties,Assistant Coach (Tight Ends)
+Nathan,Brown,Southern Nazarene,University of Central Arkansas,Assistant Coach / Offensive Line / Strength and Conditioning,Head Coach
+Zach,Allen,Southwestern Oklahoma State,Oklahoma State University,Assistant Football Coach / Offensive Coordinator / Offensive Line,Prospect Analyst (Offensive Line)
+Ryan,Olson,Grand Valley State,Northwestern University,Wide Receivers,"Assistant Coach (Running-Game Specialist, Offense)"
+Nick,Williams,Wayne State (MI),Florida State University,Defensive Line Coach,"Assistant Coach (Edge Rushers, Defensive Pass-Rush Specialist)"
+Steven,Miller,Lincoln (MO),Arizona State University,Defensive Coordinator,Assistant Coach
+Drew,Jacobs,Findlay,Harvard University,Wide Receivers,Assistant Coach (Safeties)
+Nick,Toth,Walsh,United States Air Force Academy,Linebackers Coach,"Assistant Coach (Safeties, Nickelbacks)"
+Scott,Power,Central Washington,University of Wisconsin,Head Football Coach,Assistant Coach (Defensive Backs)
+Brad,Lambert,West Florida,Marshall University,Strength & Conditioning Coach,Assistant Coach (Defensive Coordinator)
+Pete,Shinnick,West Florida,Towson University,Head Football Coach,Head Coach
+Cheston,Blackshear,Army,United States Military Academy,Assistant Offensive Line,Assistant Coach (Offensive Line)
+Chandler,Burks,Army,United States Military Academy,Running Backs,Assistant Coach (Running Backs)
+Daryl,Dixon,Army,United States Military Academy,Defensive Coordinator,"Assistant Coach (Cornerbacks, Defensive Passing-Game Coordinator)"
+John,Loose,Army,United States Military Academy,Assistant Head Coach/Outside Linebackers,Assistant Head Coach (Outside Linebackers)
+Jeff,Monken,Army,United States Military Academy,Head Coach,Head Coach
+Dane,Romero,Army,United States Military Academy,Slot Backs,Assistant Coach (Slot Backs)
+Sean,Saturnio,Army,United States Military Academy,Special Teams Coordinator,Assistant Coach (Special Teams)
+Allen,Smith,Army,United States Military Academy,Defensive Line,Assistant Coach (Defensive Line)
+Aaron,Smith,Army,United States Military Academy,Wide Receivers,Assistant Coach (Wide Receivers)
+Mike,Viti,Army,United States Military Academy,Associate Head Coach/Offensive Line,Associate Head Coach (Offensive Line)
+Justin,Weaver,Army,United States Military Academy,Inside Linebackers,Assistant Coach (Inside Linebackers)
+Cody,Worley,Army,United States Military Academy,Offensive Coordinator/Quarterbacks,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Kentwan,Balmer,Chicago State,Bucknell University,Assistant Head Coach & Defensive Line,Assistant Coach (Defensive Line)
+Bobby,Blizzard,Chicago State,Hampton University,Offensive Coordinator,Assistant Coach (Wide Receivers)
+Le'Marcus,Gibson,Chicago State,Hampton University,Defensive Coordinator,"Assistant Coach (Safeties, Defensive Passing-Game Coordinator)"
+Chad,Bowden,Notre Dame,University of Southern California,Director of Player Personnel,General Manager
+Nunzio,Campanile,UConn,Syracuse University,Offensive Coordinator,"Associate Head Coach (Tight Ends, Offense)"
+Tim,Drevno,UConn,Northwestern University,Offensive Line Coach,Assistant Coach (Offensive Line)
+Chris,Haering,UConn,West Virginia University,Tight Ends Coach,Assistant Coach (Special Teams)
+Ryan,Manalac,UConn,University of Pittsburgh,Defensive Coordinator,Assistant Coach (Linebackers)
+Brian,White,UConn,University of Massachusetts - Amherst,Running Backs Coach,Assistant Coach (Offensive Line)
+Kevin,Bracken,Dartmouth,Dartmouth College,Assistant Coach - Secondary,Assistant Coach (Defensive Backs)
+Duane,Brooks,Dartmouth,Dartmouth College,Assistant Coach - Defensive Line,Assistant Coach (Defensive Line)
+Keith,Clark,Dartmouth,Dartmouth College,Assistant Coach - Offensive Line,Assistant Coach (Offensive Line)
+Kevin,Daft,Dartmouth,Dartmouth College,Associate Head Coach - Tight Ends,Associate Head Coach (Tight Ends)
+Don,Dobes,Dartmouth,Dartmouth College,Assistant Coach - Defensive Coordinator/Linebackers,"Assistant Coach (Defensive Coordinator, Linebackers)"
+Mike,Johnson,Dartmouth,Dartmouth College,Assistant Coach - Cornerbacks,Assistant Coach (Cornerbacks)
+Sammy,McCorkle,Dartmouth,Dartmouth College,Head Football Coach,Head Coach
+Shane,Montgomery,Dartmouth,Dartmouth College,Assistant Coach - Offensive Coordinator/Quarterbacks,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Ed,Borden,Penn,University of New Hampshire,Tight Ends/Co-Offensive Coordinator,"Assistant Coach (Co-Offensive Coordinator, Tight Ends)"
+Sean,Coyne,Penn,University of New Hampshire,Wide Receivers,Assistant Coach (Wide Receivers)
+Nick,Della Jacono,Penn,University of New Hampshire,Linebackers/Co-Defensive Coordinator,"Assistant Coach (Linebackesr, Special Teams)"
+Tyree,Foreman,Penn,University of Pennsylvania - Penn,Running Backs,Assistant Coach (Tight Ends)
+Isaiah,Gilmore,Penn,University of New Hampshire,Cornerbacks,Assistant Coach (Cornerbacks)
+Tommy,Herion,Penn,University of New Hampshire,Quarterbacks Coach,Assistant Coach (Quarterbacks)
+David,Josephson,Penn,University of Pennsylvania - Penn,Safeties/Recruiting Coordinator,"Assistant Coach (Wide Receivers, Passing-Game Coordinator"
+Elias,Miller,Penn,University of Pennsylvania - Penn,Director of Football Operations,Director of Operations
+Jaysen,Thompson,Penn,University of New Hampshire,Defensive Line/Co-Defensive Coordinator,"Recruiting Coordinator, Assistant Coach (Defensive Line)"
+Justin,Trevisani,Penn,University of New Hampshire,Director of Player Personnel,"General Manager, Director of Operations, Pro Liaison"
+Ryan,Wilson,Penn,University of New Hampshire,Offensive Line/Co-Offensive Coordinator,"Assistant Coach (Co-Offensive Coordinator, Offensive Line)"
+Ola,Adams,Akron,Indiana University,Running Backs Coach,"Assistant Coach (Defensive Backs, Safeties)"
+Kelvin,Bell,Akron,University of Iowa,Linebackers Coach,Assistant Coach (Defensive Line)
+Matt,Lubick,Akron,University of Kansas,Offensive Coordinator,"Assistant Coach (Co-Offensive Coordinator, Tight Ends)"
+Marcus,Walker,Akron,Towson University,Defensive Coordinator,Assistant Coach (Cornerbacks)
+Brandon,Cooper,Ball State,Troy University,Offensive Line Coach,Assistant Coach (Cornerbacks)
+Kevin,Lynch,Ball State,Butler University,Tight Ends Coach,Head Coach
+Tyler,Stockton,Ball State,Boise State University,Defensive Coordinator,"Assistant Coach (Co-Defensive Coordinator, Safeties)"
+Eddie,George,Bowling Green,Bowling Green State University,Head Coach,Head Coach
+Deonte,Gibson,Bowling Green,University of Wyoming,Defensive Line Coach,Assistant Coach (Defensive Tackles)
+Terry,Richardson,Bowling Green,University of Akron,Running Backs Coach,Assistant Coach (Running Backs)
+Jeff,Burrow,Buffalo,University of Arkansas at Pine Bluff,Defensive Coordinator,"Assistant Coach (Defensive Coordinator, Safeties)"
+Pete,Lembo,Buffalo,SUNY University at Buffalo,Head Coach,Head Coach
+Nick,Hill,Central Michigan,Southern Illinois University Carbondale,Running Backs,Head Coach (Second Email)
+Shawn,Watson,Central Michigan,Wofford College,Wide Receivers,Head Coach
+Lamar,Owens,Eastern Michigan,Citadel Military College of South Carolina,Running Backs,"Assistant Coach (Offensive Coordinator, Wide Receivers)"
+Matt,Campbell,Kent State,Penn State,Special Teams,Head Coach
+Liam,Klein,Kent State,Georgia Tech,Defensive Coordinator/Linebackers,Director of Recruiting
+Brian,Mitchell,Kent State,North Carolina State University,Safeties,Assistant Coach (Cornerbacks)
+Colt,Arthur,Miami (OH),Miami University,Graduate Assistant,Graduate Assistant
+Johnny,Aylward,Miami (OH),Miami University,Special Teams Coordinator,Assistant Coach (Special Teams)
+Jonny,Becker,Miami (OH),Miami University,Graduate Assistant,Graduate Assistant
+Bill,Brechin,Miami (OH),Miami University,Defensive Coordinator/Linebackers,"Assistant Coach (Defensive Coordinator, Linebackers)"
+Andy,Cruse,Miami (OH),Miami University,Wide Receivers,Assistant Coach (Wide Receivers)
+Lynn,Davenport,Miami (OH),Miami University,Director of Scouting,Director of Scouting
+Isiah,Dunning,Miami (OH),SUNY University at Buffalo,Defensive Line Coach,Assistant Coach (Defensive Line)
+Brandon,Harris,Miami (OH),University of Texas - Austin,Director of Player Personnel,General Manager
+Chris,Hudson,Miami (OH),Miami University,Running Backs,Assistant Coach (Running Backs)
+Jeremiah,Josephs,Miami (OH),Miami University,Graduate Assistant,Graduate Assistant
+Coady,Keller,Miami (OH),Miami University,General Manager,General Manager
+Terrance,Knighton,Miami (OH),Florida State University,Defensive Tackles,Assistant Coach (Defensive Line)
+Justin,Lustig,Miami (OH),Penn State,Special Teams Coordinator/Tight Ends,Assistant Coach (Special Teams)
+Drew,Martin,Miami (OH),Miami University,Director of Player Personnel,Director of Player Personnel
+Spence,Nowinsky,Miami (OH),University of New Mexico,Defensive Coordinator/Linebackers,Assistant Coach (Defensive Coordinator)
+Gus,Ragland,Miami (OH),Miami University,Quarterbacks,Assistant Coach (Quarterbacks)
+Zane,Ries,Miami (OH),Miami University,Safeties,Assistant Coach (Safeties)
+Ben,Tarpey,Miami (OH),Miami University,Graduate Assistant,Graduate Assistant
+Rod,West,Miami (OH),West Virginia University,Cornerbacks,Assistant Coach (Cornerbacks)
+Mitchell,White,Miami (OH),Miami University,Defensive Backs,Assistant Coach (Defensive Backs)
+Matt,Yoches,Miami (OH),Miami University,Director of Football Operations,Director of Operations
+Brad,Davis,Northern Illinois,Louisiana State University (LSU),Offensive Line,Assistant Coach (Offensive Line)
+Kurt,Mattix,Ohio,University of North Carolina at Charlotte,Defensive Coordinator,"Assistant Coach (Co-Defensive Coordinator, Defensive Line)"
+Aaron,Foster,Toledo,University of Texas - El Paso,Cornerbacks Coach,"Assistant Coach (Cornerbacks, Defensive Passing-Game Coordinator)"
+Zack,Johnson,Fairmont State,Charleston Southern University,Associate Head Coach / Defensive Coordinator / Linebackers,Assistant Coach (Linebackers)
+Ron,Brown,Wheeling,University of Nebraska,Defensive Line Coach,"Assistant Coach (Fullbacks, Kick Returners)"
+Chris,Brown,Fort Hays State,University of Hawaii at Manoa,Head Coach,Associate Head Coach (Linebackers)
+Ryan,McCarthy,Washburn,Lamar University,Graduate Assistant,Assistant Coach
+Craig,Schurig,Washburn,University of North Alabama,Head Football Coach,Assistant Coach (Quarterbacks)
+Marc,Bacote,Air Force,United States Air Force Academy,Tight Ends,Assistant Coach (Tight Ends)
+Troy,Calhoun,Air Force,United States Air Force Academy,Head Coach,Head Coach (Second Email)
+Jake,Campbell,Air Force,United States Air Force Academy,Slot Backs,"Assistant Coach (Wide Receivers, Slot Backs)"
+Mookie,Carlile,Air Force,United States Air Force Academy,Assistant Safeties,Assistant Coach (Safeties)
+Tim,Horton,Air Force,United States Air Force Academy,Running Backs/Special Teams Coordinator,"Assistant Coach (Running Backs, Special Teams)"
+Charlie,Jackson,Air Force,United States Air Force Academy,Asst. Head Coach/Defensive Backs Coach,Assistant Coach (Defensive Backs)
+Brian,Knorr,Air Force,United States Air Force Academy,Defensive Coordinator,Assistant Coach (Defensive Coordinator)
+Ken,Lamendola,Air Force,United States Air Force Academy,Inside Linebackers,Assistant Coach (Inside Linebackers)
+Steed,Lobotzke,Air Force,United States Air Force Academy,Offensive Line,Assistant Coach (Offensive Line)
+Alex,Means,Air Force,United States Air Force Academy,Defensive Line,Assistant Coach (Defensive Line)
+Brett,Skene,Air Force,United States Air Force Academy,Specialists/Assistant Offensive Line,"Assistant Coach (Offensive Line, Special Teams)"
+Taylor,Stubblefield,Air Force,United States Air Force Academy,Wide Receivers Coach,Assistant Coach (Wide Receivers)
+Mike,Thiessen,Air Force,United States Air Force Academy,Off. Coordinator/Quarterbacks,"Assistant Head Coach (Offensive Coordinator, Quarterbacks)"
+Nick,Toth,Air Force,United States Air Force Academy,Safeties and Nickels,"Assistant Coach (Safeties, Nickelbacks)"
+Fred,Wyatt,Air Force,United States Air Force Academy,Assistant Defensive Line,Assistant Coach (Defensive Line)
+Anthony,Arceneaux,Hawaii,University of Hawaii at Manoa,Offensive Coordinator/Running Backs,"Assistant Coach (Offensive Coordinator, Running Backs)"
+Chris,Brown,Hawaii,University of Hawaii at Manoa,Associate Head Coach/Linebackers,Associate Head Coach (Linebackers)
+Timmy,Chang,Hawaii,University of Hawaii at Manoa,Head Coach,Head Coach (Second Email)
+Derek,Faavi,Hawaii,University of Hawaii at Manoa,Offensive Line,Assistant Coach (Offensive Line)
+Chad,Kapanui,Hawaii,University of Hawaii at Manoa,Quarterbacks,Assistant Coach (Quarterbacks)
+Winterhawk,Leighton,Hawaii,University of Hawaii at Manoa,Assistant Offensive Line/Run Game,"Assistant Coach (Offensive Line, Running-Game Coordinator)"
+Nick,Locher,Hawaii,University of Hawaii at Manoa,Safeties,Assistant Coach (Safeties)
+PJ,Minaya,Hawaii,University of Hawaii at Manoa,Cornerbacks,Assistant Coach (Cornerbacks)
+Jordan,Pu'u-Robinson,Hawaii,University of Hawaii at Manoa,Defensive Ends,Assistant Coach (Defensive Ends)
+Jeff,Reinebold,Hawaii,University of Hawaii at Manoa,Defensive Tackles,Assistant Coach (Defensive Tackles)
+Thomas,Sheffield,Hawaii,University of Hawaii at Manoa,Special Teams Coordinator/Tight Ends,"Assistant Coach (Tight Ends, Special Teams)"
+Dennis,Thurman,Hawaii,University of Hawaii at Manoa,Defensive Coordinator,"Assistant Coach (Defensive Coordinator, Cornerbacks)"
+Jared,Ursua,Hawaii,University of Hawaii at Manoa,Pass Game Coordinator/Wide Receivers,"Assistant Coach (Wide Receivers, Passing-Game Coordinator)"
+Tevis,Bartlett,Nevada,University of Nevada - Reno,Assistant Defensive Line,Assistant Coach (Defensive Line)
+Brett,Bartolone,Nevada,University of Colorado - Boulder,Offensive Coordinator,"Graduate Assistant (Tight Ends, Offensive Passing-Game Coordinator)"
+Jake,Belzer,Nevada,University of Nevada - Reno,Defensive Graduate Assistant (DL),"Graduate Assistant (Defense, Defensive Line)"
+Jeff,Choate,Nevada,University of Nevada - Reno,Head Coach,Head Coach
+Cole,Flores,Nevada,University of Nevada - Reno,Defensive Graduate Assistant,Graduate Assistant (Defense)
+Virgil,Green,Nevada,University of Nevada - Reno,Director of Player Development/Assistant Tight Ends,Assistant Coach (Tight Ends)
+Parker,Henry,Nevada,University of Nevada - Reno,Special Teams Coordinator/Nickels,"Assistant Coach (Nickelbacks, Special Teams)"
+Kane,Ioane,Nevada,University of Nevada - Reno,Defensive Coordinator,Assistant Coach (Defensive Coordinator)
+Nico,Johnson,Nevada,University of Nevada - Reno,Inside Linebackers,Assistant Coach (Inside Linebackers)
+Jim,Mastro,Nevada,University of Nevada - Reno,Running Backs,Assistant Coach (Running Backs)
+Bobby,Merritt,Nevada,University of Nevada - Reno,General Manager,General Manager
+Eli,Miller,Nevada,University of Nevada - Reno,Director of Football Operations,Director of Operations
+Nikhil,Nayar,Nevada,University of Nevada - Reno,Offensive Graduate Assistant,Graduate Assistant (Offense)
+Cameron,Norcross,Nevada,University of Montana,Offensive Line,Assistant Coach (Offensive Line)
+Keith,Price,Nevada,Boise State University,Wide Receivers,Graduate Assistant (Offense)
+Payam,Saadat,Nevada,University of Nevada - Reno,Associate Head Coach/Interior Defensive Line,Associate Head Coach (Defensive Tackles)
+Joey,Thomas,Nevada,University of Nevada - Reno,Passing Game Coordinator/Secondary,"Assistant Coach (Defensive Backs, Defensive Passing-Game Coordinator)"
+Trey,Tinsley,Nevada,University of Nevada - Reno,Offensive Graduate Assistant,Graduate Assistant (Offense)
+Erik,Link,New Mexico,University of Missouri,Assistant Head Coach/Special Teams Coordinator,Assistant Coach (Special Teams)
+Darrius,Smith,New Mexico,Southern Utah University,Running Backs,"Recruiting Coordinator, Assistant Head Coach (Running Backs)"
+Del,Alexander,UNLV,University of Nevada - Las Vegas,Wide Receivers Coach,Assistant Coach (Wide Receivers)
+Bam,Amina,UNLV,University of Nevada - Las Vegas,Linebackers,Assistant Coach (Linebackers)
+Austin,Armstrong,UNLV,University of Houston,Linebackers Coach,Assistant Coach (Defensive Coordinator)
+Jeremy,Bruce,UNLV,University of Nevada - Las Vegas,Outside Linebackers,Assistant Coach (Outside Linebackers)
+Akeem,Davis,UNLV,University of Nevada - Las Vegas,Cornerbacks,Assistant Coach (Cornerbacks)
+Corey,Dennis,UNLV,University of Nevada - Las Vegas,Offensive Coordinator/Quarterbacks,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Quinton,Ganther,UNLV,University of Nevada - Las Vegas,Running Backs,Assistant Coach (Running Backs)
+Paul,Guenther,UNLV,University of Nevada - Las Vegas,Associate Head Coach/Defensive Coordinator,"Associate Head Coach (Defensive Coordinator, Safeties)"
+Zach,Hanson,UNLV,University of Southern California,Offensive Line Coach,"Assistant Head Coach (Offensive Line, Offense)"
+Ricky,Logo,UNLV,University of Nevada - Las Vegas,Defensive Line,Assistant Coach (Defensive Line)
+Brennan,Marion,UNLV,University of Colorado - Boulder,Offensive Coordinator,Assistant Coach (Offensive Coordinator)
+Adrian,Mayes,UNLV,University of Nevada - Las Vegas,Tight Ends & Run Game Coordinator,"Assistant Coach (Tight Ends, Running-Game Coordinator)"
+Dan,Mullen,UNLV,University of Nevada - Las Vegas,Head Coach,Head Coach
+Corey,Raymond,UNLV,Louisiana State University (LSU),Secondary Coach,Assistant Coach (Defensive Backs)
+Adam,Scheier,UNLV,University of Nevada - Las Vegas,Special Teams Coordinator,Assistant Coach (Special Teams)
+Mike,Sollenne,UNLV,University of South Florida,Offensive Line,"Assistant Coach (Offensive Line, Offensive Running-Game Coordinator)"
+Tony,White,UNLV,Florida State University,Defensive Coordinator,Assistant Coach (Defensive Coordinator)
+Rob,Snyder,Illinois State,Nicholls State University,Assistant Coach/Defensive Line,Assistant Coach (Defensive Line)
+Lewis,Walker,North Dakota State,Monmouth University,Cornerbacks Coach,Assistant Coach (Defensive Coordinator)
+James,Bain,South Dakota,University of Minnesota,Offensive Line,Assistant Coach (Offensive Line)
+Mike,Bangtson,South Dakota State,Sam Houston State University,Offensive Line Coach,Assistant Coach (Offensive Line)
+Dan,Clark,Southern Illinois,Southern Illinois University Carbondale,Offensive Line,Assistant Coach (Offensive Line)
+Darius,Davis,Southern Illinois,Southern Illinois University Carbondale,Defensive Line,Assistant Coach (Defensive Line)
+Nathan,Frame,Southern Illinois,Southern Illinois University Carbondale,Special Teams Coordinator/Defensive Asst.,"Assistant Coach (Defense, Special Teams)"
+Zach,Grant,Southern Illinois,University of Cincinnati,Wide Receivers/Recruiting Coordinator,General Manager (Second Email)
+Nate,Griffin,Southern Illinois,Southern Illinois University Carbondale,Tight Ends,Assistant Coach (Tight Ends)
+Nick,Hill,Southern Illinois,Southern Illinois University Carbondale,Head Coach,Head Coach (Second Email)
+Mac,McLeran,Southern Illinois,Southern Illinois University Carbondale,Linebackers/Defensive Run Game Coordinator,"Assistant Coach (Linebackers, Defensive Running-Game Coordinator)"
+Ryan,McVicker,Southern Illinois,Southern Illinois University Carbondale,Quarterbacks,Assistant Coach (Quarterbacks)
+Eriq,Moore,Southern Illinois,Southern Illinois University Carbondale,Cornerbacks,Assistant Coach (Cornerbacks)
+Lee,Pronschinske,Southern Illinois,Southern Illinois University Carbondale,Defensive Coordinator/Safeties,"Assistant Coach (Defensive Coordinator, Safeties)"
+Larry,Warner,Southern Illinois,Southern Illinois University Carbondale,Running Backs,Assistant Coach (Running Backs)
+Brendan,Smith,Bentley,SUNY University at Albany,Special Teams Coordinator & Linebackers Coach,"Recruiting Coordinator, Assistant Coach (Tight Ends)"
+Canaan,Brooks,Central Connecticut,Central Connecticut State University,Running Backs,Assistant Coach (Running Backs)
+Abbott,Burrell,Central Connecticut,Central Connecticut State University,Safeties/Academic Coordinator,Assistant Coach (Safeties)
+Zach,Deldin,Central Connecticut,Central Connecticut State University,Tight Ends/Recruiting Coordinator,"Recruiting Coordinator, Assistant Coach (Tight Ends)"
+Ron,DiGravio,Central Connecticut,Central Connecticut State University,Defensive Coordinator/Inside Linebackers,"Assistant Coach (Defensive Coordinator, Inside Linebackers)"
+Jack,Dolan,Central Connecticut,Central Connecticut State University,WR/Specialists,"Assistant Coach (Wide Receivers, Special Teams)"
+Caleb,Gelsomino,Central Connecticut,Central Connecticut State University,Offensive Coordinator/Quarterbacks,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Kyle,Holt,Central Connecticut,Central Connecticut State University,Outside Linebackers/Video Coordinator,Assistant Coach (Outside Linebackers)
+Adam,Lechtenberg,Central Connecticut,Central Connecticut State University,Head Coach,Head Coach
+Aaron,Mershman,Central Connecticut,Central Connecticut State University,Offensive Line,Assistant Coach (Offensive Line)
+Joe,Rankin,Central Connecticut,Central Connecticut State University,Co-Special Teams Coordinator/Cornerbacks,"Assistant Coach (Cornerbacks, Co-Special Teams)"
+Charles,Williams,Central Connecticut,Central Connecticut State University,Co-Special Teams Coordinator/Defensive Line,"Assistant Coach (Defensive Line, Co-Special Teams)"
+Ron,Cooper,LIU,Long Island University,Head Coach,Head Coach
+Troy,Douglas,LIU,Long Island University,Assistant Head Coach/Defensive Backs Coach,Assistant Head Coach (Defensive Backs)
+TyQuan,Hammock,LIU,Long Island University,Defensive Coordinator/Linebackers Coach,"Assistant Coach (Defensive Coordinator, Linebackers)"
+Jordan,Hutzler,LIU,Long Island University,Director of Football Operations/On-Campus Recruiting Coordinator,"On-Campus Recruiting Coordinator, Director of Operations"
+Ryan,Jirgl,LIU,Long Island University,Special Teams Coordinator/Running Backs Coach,"Assistant Coach (Running Backs, Special Teams)"
+Devin,Merritt,LIU,Long Island University,Edge Coach/Recruiting Coordinator,"Recruiting Coordinator, Assistant Coach (Edge Rushers)"
+Ollie,Ogbu,LIU,Long Island University,Defensive Line Coach/Run Game Coordinator,"Assistant Coach (Defensive Line, Defensive Running-Game Coordinator)"
+Ian,Pace,LIU,Long Island University,Offensive Line Coach/Run Game Coordinator,"Assistant Coach (Offensive Line, Running-Game Coordinator)"
+John,Roberts,LIU,Long Island University,Co-Offensive Coordinator/Quarterbacks Coach,"Assistant Coach (Co-Offensive Coordinator, Quarterbacks)"
+Kahmal,Roy,LIU,Long Island University,Wide Receivers Coach,Assistant Coach (Wide Receivers)
+Kort,Shankweiler,LIU,Long Island University,Offensive Coordinator/Tight Ends Coach,"Assistant Coach (Offensive Coordinator, Tight Ends)"
+Brenden,Young,LIU,Long Island University,Cornerbacks Coach,Assistant Coach (Cornerbacks)
+Ty,Aeschbacher,Robert Morris,Robert Morris University - Pennsylvania,Assistant Coach (Special Teams Coordinator/TE),"Assistant Coach (Tight Ends, Special Teams)"
+Anthony,Cicione,Robert Morris,Robert Morris University - Pennsylvania,Assistant Coach (DB),Assistant Coach (Safeties)
+Marshall,Cooper,Robert Morris,Robert Morris University - Pennsylvania,Assistant Coach (LB),Assistant Coach (Linebackers)
+Nick,Dalton,Robert Morris,Robert Morris University - Pennsylvania,Assistant Coach (RB),Assistant Coach (Running Backs)
+John,French,Robert Morris,Robert Morris University - Pennsylvania,Assistant Coach (Recruiting Coordinator/WR),"Recruiting Coordinator, Assistant Coach (Wide Receivers, Passing-Game Coordinator)"
+Rod,Holder,Robert Morris,Robert Morris University - Pennsylvania,Associate Head Coach (OL),Associate Head Coach (Offensive Line)
+Jason,Makrinos,Robert Morris,Robert Morris University - Pennsylvania,Assistant Coach (Defensive Coordinator/CB),"Assistant Coach (Defensive Coordinator, Cornerbacks)"
+David,Rosen,Robert Morris,Robert Morris University - Pennsylvania,Director of Football Operations,Director of Operations
+Troy,Rothenbuhler,Robert Morris,Robert Morris University - Pennsylvania,Assistant Coach (Offensive Coordinator/QB),"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Sam,Scott,Robert Morris,Robert Morris University - Pennsylvania,Assistant Coach (DL),Assistant Coach (Defensive Line)
+Brian,Wright,Saint Francis,Northern Arizona University,Wide Receivers Coach,Head Coach
+Dylan,Berardelli,Stonehill,Stonehill College,Offensive Line,"Assistant Coach (Offensive Line, Running-Game Coordinator)"
+Nathan,Engle,Stonehill,Stonehill College,Director of Football Operations/Equipment,Director of Operations
+Nick,Flores,Stonehill,Stonehill College,Recruiting Coordinator/Defensive Line,"Recruiting Coordinator, Assistant Coach (Defensive Line)"
+Eli,Gardner,Stonehill,Stonehill College,Head Coach,Head Coach
+Dan,Hebert,Stonehill,Stonehill College,Offensive Coordinator/Quarterbacks,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Kyle,Jones,Stonehill,Stonehill College,Defensive Coordinator/Linebackers,"Assistant Coach (Defensive Coordinator, Linebackers)"
+Jerry,Maher,Stonehill,Stonehill College,Special Teams Coordinator/Wide Receivers,"Assistant Coach (Running Backs, Special Teams)"
+Tyler,Royall,Stonehill,Stonehill College,Defensive Backs,Assistant Coach (Defensive Backs)
+Thomas,Walsh,Stonehill,Stonehill College,Video Coordinator/Tight Ends,Assistant Coach (Tight Ends)
+Chris,Anarumo,Wagner,Wagner College,Defensive Backs,Assistant Coach (Defensive Backs)
+Tommy,Brown,Wagner,Wagner College,Assistant Wide Receivers,Assistant Coach (Wide Receivers)
+BJ,Buckle,Wagner,Wagner College,Defensive Line,Assistant Coach (Defensive Line)
+Joseph,Czelusniak,Wagner,Wagner College,Wide Receivers/Assistant Pass Game Coordinator/Pro Liaison,"Assistant Coach (Wide Receivers, Passing-Game Coordinator), Pro Liaison"
+Christopher,Evans,Wagner,Wagner College,Defensive Assistant,Assistant Coach (Defense)
+George,Gaspar,Wagner,Wagner College,Outside Linebackers/Assistant Special Teams Coordinator,"Assistant Coach (Outside Linebackers, Special Teams)"
+Quincy,Guy-Barnes,Wagner,Wagner College,Pass Game Coordinator/Quarterbacks,"Assistant Coach (Quarterbacks, Passing-Game Coordinator)"
+David,Kaplan,Wagner,Wagner College,General Manager/Director of Football Operations,"General Manager, Director of Operations"
+Tom,Masella,Wagner,Wagner College,Head Coach,Head Coach (Second Email)
+Keyon,Means-Bowman,Wagner,Wagner College,Assistant Linebackers,Assistant Coach (Linebackers)
+Jim,Munson,Wagner,Wagner College,Special Teams Coordinator/Linebackers,"Assistant Coach (Linebackers, Special Teams)"
+Julian,Ortiz,Wagner,Wagner College,Running Backs,Assistant Coach (Running Backs)
+Kevin,Singer,Wagner,Wagner College,Tight Ends,Assistant Coach (Tight Ends)
+Terence,Sino,Wagner,Wagner College,Offensive Coordinator/Offensive Line,"Assistant Coach (Offensive Coordinator, Offensive Line)"
+Chase,King,Augustana,University of Texas - El Paso,Special Teams Coordinator / Linebackers / Camp Coordinator,"Recruiting Operations Coordinator, Transfer Portal Coordinator"
+Luke,Olson,Minnesota Duluth,Louisiana Tech University,Special Teams Coordinator / Inside Linebackers,Assistant Coach (Defensive Coordinator)
+Jeremiah,Johnson,Minot State,Kansas State University,Volunteer Assistant,Assistant Coach (Defensive Backs)
+Mike,Schmidt,Northern State,San Diego State University,Head Football Coach,"Assistant Coach (Offensive Line, Running-Game Coordinator)"
+Alex,Johnson,Sioux Falls,East Carolina University,Assistant Coach - Recruiting Coordinator/Linebackers & Special Teams,Recruiting Graduate Assistant
+Austin,Flyger,Wayne State (NE),Indiana State University,Defensive Coordinator/Linebackers,Assistant Coach (Defensive Line)
+Skyler,Ridley,Boise State,Weber State University,Wide Receivers,"Assistant Coach (Wide Receivers, Special Teams)"
+David,Hill,Colorado State,University of Georgia,Running Backs,Player Connections Coordinator
+Kyle,Krantz,Colorado State,Liberty University,Special Teams Coordinator / Outside Linebackers,"Assistant Coach (Co-Defensive Coordinator, Defensive Backs)"
+Matt,Mitchell,Colorado State,Brigham Young University,Passing Game Coordinator / Quarterbacks,Assistant Coach (Quarterbacks)
+Pat,Welsh,Colorado State,Miami University,Tight Ends,"Assistant Coach (Offensive Coordinator, Tight Ends)"
+John,Baxter,Fresno State,California State University - Fresno,Associate Head Coach / Special Teams Coordinator,Associate Head Coach (Special Teams)
+Nick,Benedetto,Fresno State,California State University - Fresno,Defensive Coordinator,Assistant Coach (Defensive Coordinator)
+Adam,Breske,Fresno State,California State University - Fresno,Linebackers,"Assistant Coach (Linebackers, Co-Defensive Coordinator)"
+Josh,Davis,Fresno State,California State University - Fresno,Offensive Coordinator,Assistant Coach (Offensive Coordinator)
+Matt,Entz,Fresno State,California State University - Fresno,Head Coach,Head Coach
+Brian,Ferentz,Fresno State,California State University - Fresno,Tight Ends,Assistant Coach (Tight Ends)
+Jordan,Gigli,Fresno State,California State University - Fresno,Defensive Line,Assistant Coach (Defensive Line)
+Marcus,Hall-Oliver,Fresno State,California State University - Fresno,Edge,Assistant Coach (Edge Rushers)
+DelVon,Hardaway,Fresno State,California State University - Fresno,Wide Receivers,Assistant Coach (Wide Receivers)
+Bijan,Hosseini,Fresno State,California State University - Fresno,Assistant Offensive Line,Assistant Coach (Offensive Line)
+Aaron,Prier,Fresno State,California State University - Fresno,Running Backs,Assistant Coach (Running Backs)
+J.D.,Williams,Fresno State,California State University - Fresno,Cornerbacks,Assistant Coach (Cornerbacks)
+AJ,Steward,Oregon State,University of California - Los Angeles - UCLA,Running Backs,Assistant Coach (Running Backs)
+Dennis,Thurman,Oregon State,University of Hawaii at Manoa,Associate Defensive Coordinator / Secondary,"Assistant Coach (Defensive Coordinator, Cornerbacks)"
+Tim,Tibesar,Oregon State,University of Akron,Defensive Coordinator / Linebackers,"Assistant Coach (Defensive Coordinator, Linebackers)"
+Chris,Gistorb,Texas State,Northwestern State University of Louisiana,Defensive Line,Assistant Coach (Defensive Line)
+Will,Windham,Texas State,University of South Alabama,Defensive Coordinator,"Assistant Coach (Defensive Coordinator, Safeties)"
+Mark,Atuaia,Washington State,University of Utah,Running Backs / Tight Ends,Assistant Coach (Running Backs)
+Joel,Filani,Washington State,Abilene Christian University,Wide Receivers,"Assistant Coach (Co-Offensive Coordinator, Wide Receivers)"
+Eric,Sanders,Washington State,Eastern Washington University,Cornerbacks,Assistant Coach (Defensive Coordinator)
+Brian,Ward,Washington State,Arizona State University,Safeties,Assistant Coach (Defensive Coordinator)
+Mac,Austin,Bucknell,University of New Mexico,Assistant Coach (TE's),Graduate Assistant (Defense)
+Joe,Collins,Bucknell,Temple University,Assistant Coach (RB's),Graduate Assistant (Offense)
+Jordan,Belfiori,Colgate,Butler University,Defensive Coordinator/Outside Linebackers,"Assistant Coach (Defensive Coordinator, Linebackers)"
+Ray,Hunter,Colgate,Youngstown State University,Recruiting Coordinator/Defensive Line,Assistant Coach (Defensive Line)
+Ian,Pace,Colgate,Long Island University,Wide Receivers,"Assistant Coach (Offensive Line, Running-Game Coordinator)"
+Bo,Alexander,Holy Cross,College of the Holy Cross,Defensive Line Coach,Assistant Coach (Defensive Line)
+Dan,Curran,Holy Cross,College of the Holy Cross,Head Coach,Head Coach
+Shane,Davenport,Holy Cross,College of the Holy Cross,Director of Sport Performance / Head of Football Strength and Conditioning / Pro Liaison,Pro Liaison
+Patrick,Denecke,Holy Cross,College of the Holy Cross,Offensive Line Coach,Assistant Coach (Offensive Line)
+Andrew,Dresner,Holy Cross,College of the Holy Cross,Offensive Coordinator / Quarterbacks,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Westin,Elliott,Holy Cross,College of the Holy Cross,Running Backs Coach,Assistant Coach (Running Backs)
+Rich,Gunnell,Holy Cross,College of the Holy Cross,Assistant Head Coach / Wide Receivers,Assistant Head Coach (Wide Receivers)
+Jesse,Monteiro,Holy Cross,College of the Holy Cross,Safeties Coach,Assistant Coach (Safeties)
+Mike,Pucko,Holy Cross,College of the Holy Cross,Assistant Defensive Line Coach,Assistant Coach (Defensive Line)
+Bryan,Robbat,Holy Cross,College of the Holy Cross,Associate Head Coach / Special Teams Coordinator / Secondary,"Associate Head Coach (Defensive Backs, Special Teams)"
+Matt,Schell,Holy Cross,College of the Holy Cross,Tight Ends Coach / Pass Game Coordinator / Recruiting Coordinator,"Recruiting Coordinator, Assistant Coach (Tight Ends, Passing-Game Coordinator)"
+Brian,Vaganek,Holy Cross,College of the Holy Cross,Defensive Coordinator,Assistant Coach (Defensive Coordinator)
+Jimmy,Walsh,Holy Cross,College of the Holy Cross,Linebackers Coach,Assistant Coach (Linebackers)
+Kevin,Baumann,Lafayette,Lafayette College,Assistant Head Coach/Offensive Line,Assistant Coach (Offensive Line)
+Meade,Clendaniel,Lafayette,Lafayette College,Safeties,Assistant Coach (Safeties)
+Kuony,Deng,Lafayette,Georgetown University,Inside Linebackers,Assistant Coach (Outside Linebackers)
+T.J.,DiMuzio,Lafayette,Lafayette College,Offensive Coordinator/Quarterbacks,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Kelly,Gonzalez,Lafayette,Lafayette College,Director of Football Operations,Director of Operations
+Anthony,Johnson,Lafayette,University of Nebraska,Recruiting Coordinator/Running Backs,Recruiting Coordinator
+Donavon,Nathaniel,Lafayette,Lafayette College,Outside Linebackers,Assistant Coach (Outside Linebackers)
+Tyler,Noll,Lafayette,Lafayette College,Tight Ends,Assistant Coach (Tight Ends)
+Ryan,Roeder,Lafayette,Lafayette College,Passing Game Coordinator/Wide Receivers,"Assistant Coach (Wide Receivers, Passing-Game Coordinator)"
+Mike,Saint Germain,Lafayette,Lafayette College,Defensive Coordinator/Defensive Line,"Assistant Coach (Defensive Coordinator, Defensive Line)"
+Jeff,Sejour,Lafayette,Lafayette College,Cornerbacks,Assistant Coach (Cornerbacks)
+John,Troxell,Lafayette,Lafayette College,Fred M. Kirby II '42 Head Football Coach,Head Coach
+Drew,Folmar,Millersville,Bucknell University,Head Coach,Assistant Coach (Offensive Coordinator)
+Jake,Waters,West Chester,Penn State,Running Backs Coach,Assistant Coach (Quarterbacks)
+Ben,WooChing,CSU Pueblo,Liberty University,Defensive Line,Graduate Assistant (Defense)
+Barry,Casterlin,Erskine,Citadel Military College of South Carolina,Linebackers Coach / Special Teams Coordinator / Recruiting Coordinator,Director of Player Personnel
+JaMarcus,Shephard,Alabama,Oregon State University,Wide Receivers,Head Coach
+Philip,Montgomery,Auburn,Virginia Tech,Offensive Coordinator / Quarterbacks,Interim Head Coach
+Austin,Armstrong,Florida,University of Houston,Defensive Coordinator,Assistant Coach (Defensive Coordinator)
+Billy,Napier,Florida,James Madison University,Head Coach,Head Coach
+Dell,McGee,Georgia,Georgia State University,Associate Head Coach / Running Backs,Head Coach
+Vince,Marrow,Kentucky,University of Louisville,Associate Head Coach / Tight Ends,"Director of Recruiting, Director of Player Personnel"
+Brad,White,Kentucky,University of Florida,Defensive Coordinator,Assistant Coach (Defensive Coordinator)
+Blake,Baker,LSU,Louisiana State University (LSU),Defensive Coordinator,"Assistant Coach (Defensive Coordinator, Linebackers)"
+Joe,Sloan,LSU,University of Kentucky,Offensive Coordinator / Quarterbacks,Assistant Coach (Offensive Coordinator)
+Frank,Wilson,LSU,Louisiana State University (LSU),Associate Head Coach / Running Backs,Interim Head Coach (Running Backs)
+Kirby,Moore,Missouri,Washington State University,Offensive Coordinator / Quarterbacks,Head Coach
+Zac,Alley,Oklahoma,West Virginia University,Defensive Coordinator,"Assistant Head Coach (Defensive Coordinator, Linebackers)"
+Pete,Golding,Ole Miss,University of Mississippi,Defensive Coordinator,Head Coach (second email)
+Lane,Kiffin,Ole Miss,Louisiana State University (LSU),Head Coach,Head Coach
+Charlie,Weis Jr,Ole Miss,Louisiana State University (LSU),Offensive Coordinator / Quarterbacks,Assistant Coach (Offensive Coordinator)
+Pete,Lembo,South Carolina,SUNY University at Buffalo,Special Teams Coordinator,Head Coach
+Dowell,Loggains,South Carolina,Appalachian State University,Offensive Coordinator,Head Coach
+Travaris,Robinson,South Carolina,University of Georgia,Safeties,"Assistant Coach (Co-Defensive Coordinator, Safeties)"
+Justin,Stepp,South Carolina,University of Illinois,Wide Receivers,Assistant Coach (Wide Receivers)
+Tim,Banks,Tennessee,Auburn University,Defensive Coordinator,"Assistant Coach (Co-Defensive Coordinator, Safeties)"
+Mike,Ekeler,Tennessee,University of Nebraska,Special Teams Coordinator / Tight Ends,Assistant Coach (Special Teams)
+Brian,Jean-Mary,Tennessee,University of Michigan,Linebackers,"Assistant Coach (Linebackers, Defensive Passing-Game Coordinator)"
+Kenny,Baker,Texas,University of Texas - Austin,Defensive Line,Assistant Coach (Defensive Line)
+Jeff,Banks,Texas,University of Texas - Austin,Special Teams Coordinator / Tight Ends,"Assistant Head Coach (Tight Ends, Special Teams)"
+Michael,Bimonte,Texas,University of Texas - Austin,Co-Passing Game Coordinator / Assistant QB,"Assistant Coach (Quarterbacks, Co-Passing-Game Coordinator)"
+LaAllan,Clark,Texas,University of Texas - Austin,Edge,Assistant Coach (Edge Rushers)
+Kyle,Flood,Texas,Jacksonville State University,Offensive Coordinator / Offensive Line,Graduate Assistant (Outside Linebackers)
+Blake,Gideon,Texas,Georgia Tech,Defensive Passing Game Coordinator / Secondary,Assistant Coach (Defensive Coordinator)
+Keynodo,Hudson,Texas,University of Texas - Austin,Nickels,Assistant Coach (Nickelbacks)
+Chris,Jackson,Texas,University of Texas - Austin,Passing Game Coordinator / Wide Receivers,"Assistant Coach (Wide Receivers, Passing-Game Coordinator)"
+Jabbar,Juluke,Texas,University of Texas - Austin,Associate Head Coach / Running Backs,Assistant Coach (Running Backs)
+Brennan,Marion,Texas,University of Colorado - Boulder,Wide Receivers,Assistant Coach (Offensive Coordinator)
+AJ,Milwee,Texas,University of Texas - Austin,Co-Offensive Coordinator / Quarterbacks,"Assistant Coach (Co-Offensive Coordinator, Quarterbacks)"
+Will,Muschamp,Texas,University of Texas - Austin,Defensive Coordinator,Assistant Coach (Defensive Coordinator)
+Steve,Sarkisian,Texas,University of Texas - Austin,Head Coach,Head Coach
+DJ,Eliot,Texas A&M,North Carolina State University,Linebackers,"Assistant Coach (Defensive Coordinator, Linebackers)"
+Josh,Henson,Texas A&M,Purdue University,Offensive Line,"Assistant Coach (Offensive Coordinator, Tight Ends)"
+Collin,Klein,Texas A&M,Kansas State University,Offensive Coordinator / Quarterbacks,Head Coach
+AJ,Milwee,Texas A&M,University of Texas - Austin,Running Backs,"Assistant Coach (Co-Offensive Coordinator, Quarterbacks)"
+Nick,Howell,Vanderbilt,Utah State University,Defensive Coordinator,"Assistant Coach (Defensive Coordinator, Safeties)"
+Derrick,Jackson,Clark Atlanta,Bowling Green State University,Wide Receivers,Assistant Coach (Defensive Backs)
+Kevin,Beard,Chattanooga,University of Miami,Offensive Line,Assistant Coach (Wide Receivers)
+Matt,Kubik,Chattanooga,Campbell University,Special Teams Coordinator/Inside Linebackers,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Joe,Pizzo,Chattanooga,University of Tennessee - Chattanooga,Offensive Coordinator/Quarterbacks,Assistant Coach (Offensive Coordinator)
+Rusty,Wright,Chattanooga,University of Tennessee - Chattanooga,Head Coach,Head Coach
+Mike,Yeager,Chattanooga,University of Tennessee - Chattanooga,Defensive Coordinator/Safeties,Assistant Coach (Defensive Coordinator)
+Cam,Aiken,ETSU,East Tennessee State University,Defensive Coordinator/Linebackers,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Brian,Blackmon,ETSU,East Tennessee State University,Offensive Coordinator/Quarterbacks,Assistant Head Coach (Tight Ends)
+Brandon,Fisher,ETSU,Bowling Green State University,Cornerbacks,Associate Head Coach (Defensive Coordinator)
+Will,Healy,ETSU,East Tennessee State University,Head Coach,Head Coach
+Eric,Miller,ETSU,Howard University,Wide Receivers,Assistant Coach (Tight Ends)
+George,Quarles,ETSU,Austin Peay State University,Tight Ends/Special Teams,Assistant Coach (Tight Ends)
+Marcus,Satterfield,ETSU,University of Nebraska,Offensive Line,Assistant Coach (Tight Ends)
+Drew,Cronic,Furman,United States Naval Academy,Assistant Head Coach/Offensive Line,Assistant Coach (Offensive Coordinator)
+Bryan,Applewhite,Mercer,Western Kentucky University,Offensive Line,Assistant Coach (Running Backs)
+Alex,Atkins,Mercer,Louisiana State University (LSU),Linebackers,"Assistant Coach (Tight Ends, Running-Game Coordinator)"
+Chris,Jones,Mercer,University of North Carolina at Chapel Hill,Defensive Line,Player Personnel Associate Director
+Mickey,Conn,Samford,Clemson University,Offensive Coordinator/Offensive Line,"Assistant Coach (Safeties, Co-Special Teams, Defensive Passing-Game Coordinator)"
+Al,Pogue,Samford,University of Missouri,Wide Receivers,Assistant Head Coach (Cornerbacks)
+Tony,Coaxum,The Citadel,Citadel Military College of South Carolina,Wide Receivers,Associate Head Coach (Special Teams)
+Maurice,Drayton,The Citadel,Citadel Military College of South Carolina,Head Coach,Head Coach
+Kevin,Lewis,The Citadel,Furman University,Defensive Coordinator/Linebackers,"Assistant Coach (Defensive Line, Running-Game Coordinator)"
+Jared,Backus,VMI,Cornell University,Defensive Coordinator/Linebackers,Assistant Coach (Defensive Coordinator)
+Mike,Brown,VMI,University of Notre Dame,Offensive Line,Assistant Coach (Wide Receivers)
+Keith,Jones,VMI,Virginia Military Institute - VMI,Defensive Line,"Recruiting Coordinator, Assistant Coach (Tight Ends)"
+Aaron,Smith,Western Carolina,United States Military Academy,Graduate Assistant,Assistant Coach (Wide Receivers)
+Brian,White,Western Carolina,University of Massachusetts - Amherst,Assistant Head Coach/Running Backs,Assistant Coach (Offensive Line)
+Mitch,Doolittle,Wofford,Wofford College,Defensive Coordinator/Linebackers,"Assistant Head Coach (Co-Defensive Coordinator, Inside Linebackers)"
+Jonathan,Saxon,Wofford,Wofford College,Offensive Coordinator/Quarterbacks,"Assistant Coach (Co-Defensive Coordinator, Defensive Line)"
+Shawn,Watson,Wofford,Wofford College,Head Coach,Head Coach
+Tyler,Kelley,Appalachian State,Tulane University,Running Backs,"Recruiting Specialist (Offense), Assistant Coach (Running Backs)"
+Ryan,Pugh,Appalachian State,Abilene Christian University,Offensive Line,Assistant Coach (Offensive Line)
+Tyler,Zielenske,Appalachian State,Samford University,Special Teams Coordinator,"Recruiting Coordinator, Assistant Coach (Special Teams)"
+Nelson,Fishback,Coastal Carolina,New Mexico State University,Special Teams Coordinator/Assistant Quarterbacks Coach,"Assistant Coach (Tight Ends, Special Teams)"
+Everette,Sands,Coastal Carolina,Citadel Military College of South Carolina,Running Backs Coach,"Recruiting Coordinator, Assistant Head Coach (Running Backs)"
+Kevon,Beckwith,Georgia Southern,Stephen F Austin State University,Defensive Line Coach,Assistant Coach (Defensive Line)
+Andre,Crenshaw,Georgia Southern,Coastal Carolina University,Running Backs Coach,Assistant Coach (Running Backs)
+Prather,Hudson,Georgia Southern,University of Georgia,Safeties Coach,Graduate Assistant (Defense)
+Mike,Mutz,Georgia Southern,Stephen F Austin State University,Defensive Coordinator,Assistant Coach (Defensive Coordinator)
+Andrew,Neupert,Georgia Southern,Stephen F Austin State University,Outside Linebackers Coach,Assistant Coach (Outside Linebackers)
+Bob,Chesney,James Madison,University of California - Los Angeles - UCLA,Head Coach,Head Coach
+Chris,Smith,James Madison,Stephen F Austin State University,Offensive Line/Run Game Coordinator,"Assistant Coach (Defensive Backs), Director of Player Development"
+George,Barlow,Louisiana,University of Louisiana - Lafayette,Assistant Coach/CB,Assistant Coach (Cornerbacks)
+Matt,Bergeron,Louisiana,University of Louisiana - Lafayette,Assistant Coach/RB,Assistant Coach (Running Backs)
+Michael,Desormeaux,Louisiana,University of Louisiana - Lafayette,Head Coach,Head Coach
+Tim,Leger,Louisiana,University of Louisiana - Lafayette,Offensive Coordinator/Recruiting Coordinator/WR,"Recruiting Coordinator, Assistant Coach (Offensive Coordinator, Wide Receivers)"
+Jorge,Munoz,Louisiana,University of Louisiana - Lafayette,Associate Head Coach/TE,Associate Head Coach (Tight Ends)
+Jim,Salgado,Louisiana,University of Louisiana - Lafayette,Defensive Coordinator/Safeties,"Assistant Coach (Defensive Coordinator, Safeties)"
+Dean,Hood,Marshall,University of Kentucky,Safeties,Director of Player Development
+Wendy,Laurent,Old Dominion,Ohio State University,Tight Ends,Assistant Coach (Tight Ends)
+Phil,Serchia,Old Dominion,University of Tennessee,Offensive Line/Run Game Coordinator,Assistant Coach (Offense)
+Michael,Smith,Old Dominion,San Jose State University,Wide Receivers,Assistant Coach (Running Backs)
+Blake,Anderson,Southern Miss,University of Southern Mississippi,Head Coach/Offensive Coordinator/Quarterbacks,Head Coach
+Joe,Bolden,Southern Miss,University of Southern Mississippi,Special Teams Coordinator,"Assistant Coach (Defensive Coordinator, Linebackers)"
+Dominique,Bowman,Southern Miss,University of Memphis,Defensive Backs,"Assistant Coach (Defensive Backs, Safeties)"
+Jason,Semore,Southern Miss,University of Memphis,Defensive Coordinator/Linebackers,"Assistant Coach (Defensive Coordinator, Linebackers)"
+Adam,Austin,Troy,Tarleton State University,Offensive Coordinator/Quarterbacks,Assistant Coach (Offensive Coordinator)
+Cameron,Blankenship,UL Monroe,University of Louisiana - Monroe,Assistant Coach - Offensive Line,Assistant Coach (Offensive Line)
+Taylor,Dupuis,UL Monroe,University of Louisiana - Monroe,Assistant Coach - Quarterbacks,Assistant Coach (Quarterbacks)
+Earnest,Hill,UL Monroe,University of Louisiana - Monroe,Assistant Head Coach/Cornerbacks,Assistant Head Coach (Defensive Coordinator)
+Chris,Jones,UL Monroe,University of North Carolina at Chapel Hill,Pass Game Coordinator/Safeties,Player Personnel Associate Director
+Tony,McClain,UL Monroe,East Texas A&M University,Special Teams Coordinator/Defensive Line Assistant,"Assistant Coach (Special Teams, Defensive Line)"
+Troy,Reffett,UL Monroe,University of Louisiana - Monroe,Defensive Coordinator/Inside Linebackers,"Assistant Coach (Inside Linebackers, Defensive Running-Game Coordinator)"
+Bryant,Vincent,UL Monroe,University of Louisiana - Monroe,Head Football Coach,Head Coach
+Brady,Vincent,UL Monroe,University of Louisiana - Monroe,Assistant Coach - Tight Ends,Assistant Coach (Tight Ends)
+Cody,Wells,UL Monroe,University of Louisiana - Monroe,Assistant Receivers Coach,Assistant Coach (Offense)
+Marc,Yellock,UL Monroe,Hampton University,Run Game Coordinator/Defensive Line,Assistant Coach (Defensive Line)
+Miguel,Black,Arkansas-Pine Bluff,University of Arkansas at Pine Bluff,Running Backs Coach / Recruiting Coordinator,"Recruiting Coordinator, Assistant Coach (Running Backs)"
+Jeff,Burrow,Arkansas-Pine Bluff,University of Arkansas at Pine Bluff,Defensive Coordinator / Defensive Back,"Assistant Coach (Defensive Coordinator, Safeties)"
+Alonzo,Hampton,Arkansas-Pine Bluff,University of Arkansas at Pine Bluff,Head Coach,Head Coach
+Tony,Hull,Arkansas-Pine Bluff,University of Arkansas at Pine Bluff,Offensive Coordinator/ QB Coach,"Assistant Coach (Offensive Coordinator, Quarterbacks)"
+Pierre,Ingram,Arkansas-Pine Bluff,University of Arkansas at Pine Bluff,Wide Receiver Coach,Assistant Coach (Wide Receivers)
+Donovan,Jackson,Arkansas-Pine Bluff,University of Arkansas at Pine Bluff,Offensive Line Coach,Assistant Coach (Offensive Line)
+Nathan,Jones,Arkansas-Pine Bluff,Alabama A&M University,Linebackers / Defensive Recruiting Coordinator,Assistant Coach (Special Teams)
+Tom,Manley,Arkansas-Pine Bluff,University of Arkansas at Pine Bluff,Special Teams Coordinator / Tight Ends,"Assistant Coach (Tight Ends, Special Teams)"
+George,Ricumstrict,Arkansas-Pine Bluff,University of Arkansas at Pine Bluff,Defensive Line,Assistant Coach (Defensive Line)
+Marshall,Faulk,Southern University,Southern University & A&M College,Head Coach,Head Coach
+Ricky,Jackson,Southern University,Southern University & A&M College,Director of Football Operations,"Director of Player Personnel, Director of Operations"

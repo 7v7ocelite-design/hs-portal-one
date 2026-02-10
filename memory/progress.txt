@@ -1,0 +1,345 @@
+# HS Portal One - Progress Log (The Diary)
+# =========================================
+# Ralph writes notes to future selves here.
+# Each session: READ this, DO task, WRITE notes, EXIT.
+#
+# Format:
+# [TIMESTAMP] STATUS: Task description
+# - What I did: explanation
+# - Files created/modified: list
+# - Issues encountered: any problems
+# - Next Ralph should: context for next session
+# =========================================
+
+[2025-01-23 00:00:00] INITIALIZED: Project memory files created
+- What I did: Set up the infinite memory loop structure
+- Files created: memory/context.md, memory/todo.md, memory/progress.txt
+- Issues encountered: None
+- Next Ralph should: Start with "Initialize Next.js 14 with App Router"
+
+## IMPORTANT NOTES FOR ALL FUTURE RALPHS:
+
+### Database
+- Supabase URL: https://jilvjnqnihseykwzvpzp.supabase.co
+- NOW using `coaches` table directly (8,783 coaches)
+- RLS enabled with public SELECT policy
+- UPDATE policy NOT YET ADDED (see TODO below)
+
+### Colors (memorize these)
+- Background: #0a0a0f
+- Card: #12141a
+- Border: #2a2d35
+- Athlete: #3b82f6 (blue)
+- High School: #d4af37 (gold)
+- Club: #9333ea (purple)
+- Coach accent: #c41e3a (red)
+
+### Code Location
+- All patterns and copy-paste code is in SPEC.md
+- Read SPEC.md before writing ANY component
+
+---
+
+# SESSION LOG
+# (Ralph adds entries below this line)
+
+[2026-02-05] SESSION: Database fixes, UI updates, Admin portal setup
+- What I did:
+  - Fixed query to show all 8,783 coaches (was limited to 1,000)
+  - Added RLS SELECT policy to coaches table
+  - Changed branding from "EA SPORTS" to "AIC"
+  - Updated tagline to "College Coach Database"
+  - Added search bar to sidebar
+  - Created /admin/coaches page with edit capability
+  - Coach modal now has isAdmin prop - only shows Edit button when true
+
+- Files created/modified:
+  - hooks/use-coaches.ts (changed from tier1_coaches to coaches table)
+  - components/coaches/ea-sidebar.tsx (added search bar)
+  - components/coaches/ea-coach-table.tsx (updated header display)
+  - components/coaches/coach-modal.tsx (added edit mode, isAdmin prop)
+  - app/coaches/page.tsx (updated branding)
+  - app/admin/coaches/page.tsx (NEW - admin portal with edit access)
+
+- Issues encountered: None
+
+---
+
+## ⚠️ TODO: ADMIN AUTHENTICATION (DO NOT SKIP)
+
+When building the auth system, you MUST:
+
+1. **Create auth system with Supabase Auth**
+   - Login/signup pages
+   - User sessions
+
+2. **Add admin role to users**
+   ```sql
+   ALTER TABLE users ADD COLUMN is_admin BOOLEAN DEFAULT false;
+   ```
+
+3. **Add secure RLS UPDATE policy** (DO NOT use `USING (true)`)
+   ```sql
+   CREATE POLICY "Only admins can update coaches" ON coaches
+     FOR UPDATE USING (
+       auth.uid() IN (SELECT id FROM users WHERE is_admin = true)
+     );
+   ```
+
+4. **Protect /admin routes**
+   - Check auth state
+   - Redirect non-admins
+
+5. **Build separate dashboards**
+   - User dashboard (view only)
+   - Admin dashboard (full CRUD)
+
+**Current state:** Admin page exists at /admin/coaches and editing WORKS!
+Temp RLS policy allows all updates. Once auth is complete, replace with
+proper admin-only policy that checks is_admin in profiles table.
+
+---
+
+[2026-02-05] SESSION: Auth System Build
+- What I did:
+  - Created supabase-auth-setup.sql with all tables (profiles, athletes, hs_coaches, clubs)
+  - Added role colors to lib/constants.ts (athlete=blue, coach=green, club=orange)
+  - Created types/user.ts with all TypeScript types
+  - Created app/(auth)/layout.tsx - centered auth layout
+  - Created app/(auth)/login/page.tsx - Supabase auth login
+  - Created app/(auth)/signup/page.tsx - Supabase auth signup with email confirmation
+  - Created app/onboarding/page.tsx - role selection (athlete/coach/club)
+  - Created app/onboarding/athlete/page.tsx - 3-step athlete profile form
+  - Created app/onboarding/coach/page.tsx - 2-step HS coach profile form
+  - Created app/onboarding/club/page.tsx - 2-step club profile form
+
+- Files created:
+  - supabase-auth-setup.sql
+  - lib/constants.ts (updated with ROLE_COLORS, FOOTBALL_POSITIONS, GRADUATION_YEARS)
+  - types/user.ts
+  - app/(auth)/layout.tsx
+  - app/(auth)/login/page.tsx
+  - app/(auth)/signup/page.tsx
+  - app/onboarding/page.tsx
+  - app/onboarding/athlete/page.tsx
+  - app/onboarding/coach/page.tsx
+  - app/onboarding/club/page.tsx
+
+- Next steps:
+  1. Create dashboard pages for each role
+  2. Add middleware for route protection
+  3. Test full signup → onboarding flow
+
+---
+
+[2026-02-06] SESSION: Fixed RLS Infinite Recursion Bug + Admin Edit Working!
+- Problem: Admin edit was failing with "infinite recursion detected in policy for relation profiles"
+- Root cause: The "Admin full access profiles" policy queried the profiles table to check is_admin, creating a circular reference
+- Fix applied in Supabase SQL Editor:
+  - Dropped recursive policies on profiles table
+  - Recreated with direct auth.uid() checks (no subqueries on same table)
+  - Added temp policy on coaches: FOR UPDATE USING (true)
+- Result: ✅ Admin edit now works! Tested by changing Jovon Hubbard's position to "Assistant GM"
+
+What's now working:
+- ✅ Dev server at localhost:3000
+- ✅ All UI fixes (AIC branding, search bar, showing X of Y coaches)
+- ✅ Auth tables created (profiles, athletes, hs_coaches, clubs)
+- ✅ Admin coach editing persists to database
+
+Next steps:
+1. Test signup → onboarding flow
+2. Create dashboard pages for each role
+3. Add middleware for route protection
+4. Replace temp coaches UPDATE policy with proper admin-only policy
+
+⚠️ BEFORE PRODUCTION:
+- Re-enable email confirmation in Supabase (currently disabled for dev testing)
+- Remove "Temp allow all updates" policy on coaches table
+
+---
+
+[2026-02-08] SESSION: Dashboards + Middleware Complete! 🎉
+- What I did:
+  - Built all 3 dashboard pages (athlete, coach, club)
+  - Tested all 3 onboarding flows end-to-end
+  - Removed flag football options (football-only focus)
+  - Added expanded coach title options (17 titles)
+  - Created route protection middleware
+  - Created lib/supabase/server.ts and lib/supabase/middleware.ts
+
+- Files created:
+  - app/dashboard/layout.tsx (shared dashboard layout with sidebar)
+  - app/dashboard/athlete/page.tsx (profile overview, completion %, contact links)
+  - app/dashboard/coach/page.tsx (school card, program stats)
+  - app/dashboard/club/page.tsx (club branding, roster stats)
+  - middleware.ts (route protection)
+  - lib/supabase/server.ts
+  - lib/supabase/middleware.ts
+
+- All user flows verified:
+  ✅ Athlete: signup → onboarding → dashboard
+  ✅ Coach: signup → onboarding → dashboard
+  ✅ Club: signup → onboarding → dashboard
+
+- Middleware protection verified:
+  ✅ /dashboard/* requires login
+  ✅ /admin/* requires is_admin = true
+  ✅ /login redirects to dashboard if already logged in
+
+- Test accounts created:
+  - Admin: info@ocelitefootball.com / AuraQuest2023
+  - Athlete: test+onboarding@gmail.com / TestPass123!
+  - Coach: kevin.morton@nibll.com / AuraQuest2023!
+  - Club: test+club@gmail.com / TestPass123!
+
+- Next steps:
+  1. Robot Scouts - Set up Visualping, add verification columns
+  2. v0 UI Polish - Enhanced dashboards and coach cards
+  3. Stripe payments integration
+
+---
+
+## 🗺️ BUILD ORDER (Agreed 2026-02-06)
+
+### Phase 1: NOW (Close the loop)
+1. Build basic dashboard pages (athlete, coach, club) - users hit 404 currently
+2. Quick test coach + club onboarding flows
+3. Add route protection middleware
+
+### Phase 2: NEXT (Data infrastructure)
+1. Finalize additional schema (rosters, schools, transfers)
+2. Build "Robot Scouts" - automated monitoring for coaching changes
+3. CrewAI scraping agents for roster/coaching data
+
+### Phase 3: THEN (UI Polish)
+1. v0 by Vercel for polished UI components
+2. Recruiting dashboard, coach profiles, search/filter
+3. Transfer alerts
+
+### Phase 4: LAST (Launch prep)
+1. Stripe payments integration
+2. Mobile optimization
+3. Re-enable email confirmation
+4. Remove temp RLS policies
+5. Production deployment
+
+---
+
+## 🤖 ROBOT SCOUTS STRATEGY (Data Freshness System)
+
+### Goal: Keep 8,783+ coach records up-to-date automatically
+
+### Tracking Methods:
+1. **Visual Monitoring** (Visualping, Sken.io)
+   - Takes screenshot of coach directory page
+   - Alerts when names/photos change
+   - Good for detecting ANY change
+
+2. **Keyword Monitoring** (ChangeTower, Wachete)
+   - Watches for specific words like "2026", "New Hire"
+   - Ignores noise, only alerts on relevant changes
+
+### Integration Options:
+1. **Email Alerts** (Simple)
+   - Scout emails Kevin
+   - Manual database update
+   - 100% accuracy, slower
+
+2. **Webhooks** (Automated)
+   - Scout pings our API directly
+   - Auto-marks coach as "Updated for 2026"
+   - Faster, needs validation
+
+### Best Practices:
+- Use "Select Area" to monitor ONLY the Coaching Staff Table
+- Ignore ads, headers, footers
+- Add "Last Scouted" timestamp to each coach record
+- Display: "Staff Status: Verified 2/6/2026"
+
+### Database Schema Addition Needed:
+```sql
+ALTER TABLE coaches ADD COLUMN last_verified_at timestamptz;
+ALTER TABLE coaches ADD COLUMN verification_source text; -- 'manual' | 'scout' | 'scraper'
+```
+
+### EA Sports-Style Display:
+- Green badge: "Verified today"
+- Yellow badge: "Verified this week"
+- Red badge: "Needs verification (30+ days)"
+
+---
+
+## 📐 AUTH SYSTEM SCHEMA (From User Wireframe - 2026-02-05)
+
+### 3 User Types (with accent colors):
+1. **Individual Athlete** - Blue (#3b82f6)
+2. **High School Program** - Gold (#d4af37)
+3. **Club / 7-on-7 Team** - Purple (#9333ea)
+
+### Database Tables:
+
+#### profiles (central auth table)
+- id (uuid, PK)
+- user_id (uuid, FK → auth.users.id, UNIQUE)
+- role (text: 'athlete' | 'coach' | 'club')
+- email (text)
+- onboarding_complete (boolean, default false)
+- subscription_tier (text)
+- stripe_customer_id (text, nullable)
+- is_admin (boolean, default false)
+- created_at, updated_at
+
+#### athletes
+- id (uuid, PK)
+- profile_id (uuid, FK → profiles.id)
+- first_name, last_name (NOT NULL)
+- primary_position, secondary_position
+- graduation_year (int)
+- high_school, city, state
+- height_feet, height_inches, weight_lbs
+- gpa (decimal)
+- hudl_link, twitter_handle, phone, parent_email
+
+#### hs_coaches
+- id (uuid, PK)
+- profile_id (uuid, FK → profiles.id)
+- school_name, first_name, last_name
+- city, state
+- sport_type ('football' | 'flag_football' | 'both')
+- title, school_enrollment, conference
+
+#### clubs
+- id (uuid, PK)
+- profile_id (uuid, FK → profiles.id)
+- club_name, director_first_name, director_last_name
+- city, state
+- sport_type ('7on7' | 'flag_football' | 'both')
+- primary_color, secondary_color (hex)
+- website, roster_count
+
+### Auth Flow:
+1. Signup → Email confirm → /onboarding
+2. Auto-create profile via DB trigger (handle_new_user)
+3. Redirect logic:
+   - No session → /login
+   - Session + !onboarding_complete → /onboarding
+   - Session + onboarding_complete → /dashboard/{role}
+
+### Trigger SQL:
+```sql
+CREATE OR REPLACE FUNCTION public.handle_new_user()
+RETURNS trigger AS $$
+BEGIN
+  INSERT INTO public.profiles (user_id, email)
+  VALUES (new.id, new.email);
+  RETURN new;
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+
+CREATE TRIGGER on_auth_user_created
+  AFTER INSERT ON auth.users
+  FOR EACH ROW EXECUTE FUNCTION public.handle_new_user();
+```
+
+---
