@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
@@ -23,9 +24,11 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-<img
+            <Image
               src="/images/logo.svg"
               alt="HS Portal"
+              width={120}
+              height={40}
               className="h-10 w-auto"
             />
           </Link>

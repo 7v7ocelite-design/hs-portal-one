@@ -167,7 +167,7 @@ export function getRecruitingStatus(): {
   activity: "🔴 Dead" | "🟡 Quiet" | "🟢 Active" | "🔥 Peak";
   nextEvent: string;
 } {
-  const { period, name, scrapeMultiplier } = getCurrentPeriod();
+  const { name, scrapeMultiplier } = getCurrentPeriod();
   const now = new Date();
 
   let activity: "🔴 Dead" | "🟡 Quiet" | "🟢 Active" | "🔥 Peak";
@@ -180,14 +180,14 @@ export function getRecruitingStatus(): {
   let nextEvent = "Normal operations";
 
   // Check upcoming high-activity periods
-  for (const period of HIGH_ACTIVITY_2026) {
-    if (now < period.start) {
-      const daysUntil = Math.ceil((period.start.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
-      if (period.period === "evaluation") {
+  for (const calPeriod of HIGH_ACTIVITY_2026) {
+    if (now < calPeriod.start) {
+      const daysUntil = Math.ceil((calPeriod.start.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
+      if (calPeriod.period === "evaluation") {
         nextEvent = `Spring Evaluation in ${daysUntil} days`;
-      } else if (period.period === "quiet" && period.start.getMonth() === 5) {
+      } else if (calPeriod.period === "quiet" && calPeriod.start.getMonth() === 5) {
         nextEvent = `Official Visit SZN in ${daysUntil} days`;
-      } else if (period.period === "early_signing") {
+      } else if (calPeriod.period === "early_signing") {
         nextEvent = `Early Signing Period in ${daysUntil} days`;
       }
       break;
