@@ -62,7 +62,7 @@ export default function ClubOnboardingPage() {
     checkAuth()
   }, [router, supabase])
 
-  const updateField = (field: keyof ClubForm, value: any) => {
+  const updateField = (field: keyof ClubForm, value: string | number | null) => {
     // Apply appropriate sanitization based on field type
     let sanitizedValue = value
     if (typeof value === 'string') {
@@ -130,8 +130,8 @@ export default function ClubOnboardingPage() {
       if (updateError) throw updateError
 
       router.push('/dashboard/club')
-    } catch (err: any) {
-      setError(err.message || 'Failed to save profile')
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to save profile')
     } finally {
       setIsLoading(false)
     }

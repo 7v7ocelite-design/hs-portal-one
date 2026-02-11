@@ -78,7 +78,7 @@ export default function AthleteOnboardingPage() {
     checkAuth()
   }, [router, supabase])
 
-  const updateField = (field: keyof AthleteForm, value: any) => {
+  const updateField = (field: keyof AthleteForm, value: string | number | null) => {
     // Apply appropriate sanitization based on field type
     let sanitizedValue = value
     if (typeof value === 'string') {
@@ -164,8 +164,8 @@ export default function AthleteOnboardingPage() {
       if (updateError) throw updateError
 
       router.push('/dashboard/athlete')
-    } catch (err: any) {
-      setError(err.message || 'Failed to save profile')
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to save profile')
     } finally {
       setIsLoading(false)
     }
@@ -343,7 +343,7 @@ export default function AthleteOnboardingPage() {
                   >
                     <option value="">Ft</option>
                     {[4, 5, 6, 7].map(ft => (
-                      <option key={ft} value={ft}>{ft}'</option>
+                      <option key={ft} value={ft}>{ft}&apos;</option>
                     ))}
                   </select>
                 </div>
@@ -356,7 +356,7 @@ export default function AthleteOnboardingPage() {
                   >
                     <option value="">In</option>
                     {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(inch => (
-                      <option key={inch} value={inch}>{inch}"</option>
+                      <option key={inch} value={inch}>{inch}&quot;</option>
                     ))}
                   </select>
                 </div>
