@@ -1,6 +1,6 @@
 'use client'
 
-import { Mail, Twitter, ChevronRight, ChevronDown, Loader2 } from 'lucide-react'
+import { Mail, Twitter, ChevronDown, Loader2 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import type { Coach } from '@/types/coach'
 

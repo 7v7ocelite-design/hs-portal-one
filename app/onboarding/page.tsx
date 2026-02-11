@@ -94,7 +94,7 @@ export default function OnboardingPage() {
 
       // Navigate to role-specific onboarding
       router.push(`/onboarding/${selectedRole}`)
-    } catch (err: any) {
+    } catch (err) {
       console.error('Error updating role:', err)
     } finally {
       setIsLoading(false)

@@ -2,7 +2,6 @@
 
 import { useEffect, useCallback, useState } from 'react'
 import { X, Mail, Twitter, Phone, Copy, ExternalLink, User, Building2, MapPin, Pencil, Save, Loader2 } from 'lucide-react'
-import { cn } from '@/lib/utils'
 import { createClient } from '@/lib/supabase/client'
 import { useQueryClient } from '@tanstack/react-query'
 import type { Coach } from '@/types/coach'

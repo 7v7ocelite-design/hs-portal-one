@@ -28,7 +28,6 @@ const POSITIONS = [
 interface EaSidebarProps {
   filters: CoachFilters
   onFilterChange: (key: keyof CoachFilters, value: string | boolean | undefined) => void
-  onSearch: () => void
   onExport: () => void
   onExportCsv: () => void
   onClearFilters: () => void
@@ -39,7 +38,6 @@ interface EaSidebarProps {
 export function EaSidebar({
   filters,
   onFilterChange,
-  onSearch,
   onExport,
   onExportCsv,
   onClearFilters,
