@@ -10,8 +10,7 @@ import {
   Search,
   Settings,
   Globe,
-  UserPlus,
-  Palette
+  UserPlus
 } from 'lucide-react'
 import { ROLE_COLORS } from '@/lib/constants'
 

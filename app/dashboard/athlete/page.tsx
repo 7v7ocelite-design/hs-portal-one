@@ -94,7 +94,7 @@ export default function AthleteDashboard() {
           <h1 className="text-2xl font-bold text-white">
             Welcome back, {athlete?.first_name || 'Athlete'}! 👋
           </h1>
-          <p className="text-gray-400 mt-1">Here's your recruiting dashboard</p>
+          <p className="text-gray-400 mt-1">Here&apos;s your recruiting dashboard</p>
         </div>
         <Link
           href="/coaches"
@@ -179,7 +179,7 @@ export default function AthleteDashboard() {
               )}
               {athlete?.height_feet && (
                 <div className="text-gray-400">
-                  {athlete.height_feet}'{athlete.height_inches || 0}" • {athlete.weight_lbs || '---'} lbs
+                  {athlete.height_feet}&apos;{athlete.height_inches || 0}&quot; • {athlete.weight_lbs || '---'} lbs
                 </div>
               )}
             </div>

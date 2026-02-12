@@ -11,8 +11,7 @@ import {
   Settings,
   LogOut,
   Loader2,
-  Menu,
-  X
+  Menu
 } from 'lucide-react'
 import { ROLE_COLORS } from '@/lib/constants'
 
@@ -20,9 +19,13 @@ interface DashboardLayoutProps {
   children: React.ReactNode
 }
 
+interface UserProfile {
+  role: string
+  onboarding_complete: boolean
+}
+
 export default function DashboardLayout({ children }: DashboardLayoutProps) {
-  const [user, setUser] = useState<any>(null)
-  const [profile, setProfile] = useState<any>(null)
+  const [profile, setProfile] = useState<UserProfile | null>(null)
   const [isLoading, setIsLoading] = useState(true)
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const router = useRouter()
@@ -36,8 +39,6 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         router.push('/login')
         return
       }
-
-      setUser(session.user)
 
       // Get profile
       const { data: profileData } = await supabase
