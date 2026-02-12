@@ -143,7 +143,6 @@ export default function CoachesPage() {
           <EaSidebar
             filters={filters}
             onFilterChange={handleFilterChange}
-            onSearch={handleSearch}
             onExport={handleExport}
             onExportCsv={handleExportCsv}
             onClearFilters={handleClearFilters}

@@ -32,7 +32,7 @@ export default function LoginPage() {
         .from('profiles')
         .select('onboarding_complete, role')
         .eq('user_id', data.user.id)
-        .single()
+        .single() as { data: { onboarding_complete: boolean; role: string } | null }
 
       if (profile?.onboarding_complete && profile?.role) {
         router.push(`/dashboard/${profile.role}`)
