@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button'
 
 const navLinks = [
   { href: '/coaches', label: 'Coaches' },
+  { href: '/fit-finder', label: 'Fit Finder' },
   { href: '/map', label: 'Map' },
   { href: '/pricing', label: 'Pricing' },
 ]
