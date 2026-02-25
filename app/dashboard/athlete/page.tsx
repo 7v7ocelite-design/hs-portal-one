@@ -14,7 +14,10 @@ import {
   ExternalLink,
   Search,
   CheckCircle,
-  AlertCircle
+  AlertCircle,
+  Target,
+  TrendingUp,
+  ArrowRight,
 } from 'lucide-react'
 import { ROLE_COLORS } from '@/lib/constants'
 
@@ -48,7 +51,6 @@ export default function AthleteDashboard() {
       const { data: { session } } = await supabase.auth.getSession()
       if (!session) return
 
-      // Get profile first
       const { data: profile } = await supabase
         .from('profiles')
         .select('id')
@@ -57,15 +59,14 @@ export default function AthleteDashboard() {
 
       if (!profile) return
 
-      // Get athlete data
       const { data: athleteData } = await supabase
         .from('athletes')
         .select('*')
-        .eq('profile_id', profile.id)
+        .eq('profile_id', (profile as { id: string }).id)
         .single()
 
       if (athleteData) {
-        setAthlete(athleteData)
+        setAthlete(athleteData as AthleteData)
       }
 
       setIsLoading(false)
@@ -76,250 +77,261 @@ export default function AthleteDashboard() {
 
   if (isLoading) {
     return (
-      <div className="animate-pulse space-y-6">
-        <div className="h-8 bg-[#1a1c22] rounded w-1/3" />
-        <div className="h-48 bg-[#1a1c22] rounded" />
-        <div className="h-32 bg-[#1a1c22] rounded" />
+      <div className="space-y-6 animate-pulse">
+        <div className="h-10 bg-white/[0.03] rounded-xl w-2/3" />
+        <div className="h-32 bg-white/[0.03] rounded-2xl" />
+        <div className="grid grid-cols-2 gap-5">
+          <div className="h-64 bg-white/[0.03] rounded-2xl" />
+          <div className="h-64 bg-white/[0.03] rounded-2xl" />
+        </div>
       </div>
     )
   }
 
   const profileCompletion = athlete ? calculateProfileCompletion(athlete) : 0
+  const completionColor = profileCompletion >= 80 ? '#22c55e' : profileCompletion >= 50 ? '#d4af37' : '#f97316'
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 animate-fade-in">
       {/* Welcome Header */}
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-bold text-white">
-            Welcome back, {athlete?.first_name || 'Athlete'}! 👋
+            Welcome back, {athlete?.first_name || 'Athlete'}
           </h1>
-          <p className="text-gray-400 mt-1">Here&apos;s your recruiting dashboard</p>
+          <p className="text-gray-500 mt-1 text-sm">Here&apos;s your recruiting dashboard</p>
         </div>
         <Link
           href="/coaches"
-          className="flex items-center gap-2 px-4 py-2 rounded-lg text-white font-medium transition-colors"
-          style={{ backgroundColor: color.primary }}
+          className="group hidden sm:flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-sm font-semibold transition-all duration-200"
+          style={{ backgroundColor: color.primary, boxShadow: `0 0 16px ${color.primary}25` }}
         >
           <Search className="w-4 h-4" />
           Find Coaches
+          <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
         </Link>
       </div>
 
-      {/* Profile Completion Card */}
-      <div className="bg-[#12141a] border border-[#2a2d35] rounded-xl p-6">
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-semibold text-white">Profile Completion</h2>
-          <span className="text-2xl font-bold" style={{ color: color.primary }}>
+      {/* Profile Completion */}
+      <div className="glass-card p-5">
+        <div className="flex items-center justify-between mb-3">
+          <div>
+            <h2 className="text-sm font-semibold text-white">Profile Completion</h2>
+            {profileCompletion < 100 && (
+              <p className="text-xs text-gray-500 mt-0.5">Complete your profile to increase visibility</p>
+            )}
+          </div>
+          <span className="text-2xl font-bold" style={{ color: completionColor }}>
             {profileCompletion}%
           </span>
         </div>
-        <div className="h-2 bg-[#2a2d35] rounded-full overflow-hidden">
+        <div className="h-1.5 bg-white/[0.04] rounded-full overflow-hidden">
           <div
-            className="h-full transition-all duration-500"
-            style={{
-              width: `${profileCompletion}%`,
-              backgroundColor: color.primary,
-            }}
+            className="h-full rounded-full transition-all duration-700 ease-out"
+            style={{ width: `${profileCompletion}%`, backgroundColor: completionColor }}
           />
         </div>
-        {profileCompletion < 100 && (
-          <p className="text-gray-400 text-sm mt-3">
-            Complete your profile to increase visibility to college coaches
-          </p>
-        )}
       </div>
 
-      {/* Profile Overview */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Left Column - Basic Info */}
-        <div className="bg-[#12141a] border border-[#2a2d35] rounded-xl p-6">
-          <h2 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
-            <User className="w-5 h-5" style={{ color: color.primary }} />
-            Profile Overview
+      {/* Main Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        {/* Profile Overview */}
+        <div className="glass-card p-6">
+          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-5 flex items-center gap-2">
+            <User className="w-4 h-4" style={{ color: color.primary }} />
+            Profile
           </h2>
 
-          <div className="space-y-4">
-            {/* Name & Position */}
+          <div className="space-y-5">
             <div className="flex items-center gap-4">
               <div
-                className="w-16 h-16 rounded-xl flex items-center justify-center text-2xl font-bold text-white"
-                style={{ backgroundColor: color.primary }}
+                className="w-14 h-14 rounded-xl flex items-center justify-center text-xl font-bold text-white"
+                style={{ backgroundColor: `${color.primary}20`, color: color.primary }}
               >
                 {athlete?.first_name?.charAt(0)}{athlete?.last_name?.charAt(0)}
               </div>
               <div>
-                <div className="text-xl font-bold text-white">
+                <div className="text-lg font-bold text-white">
                   {athlete?.first_name} {athlete?.last_name}
                 </div>
-                <div className="text-gray-400">
-                  {athlete?.primary_position}
-                  {athlete?.secondary_position && ` / ${athlete.secondary_position}`}
+                <div className="flex items-center gap-2 mt-0.5">
+                  <span className="text-sm px-2 py-0.5 rounded-md font-medium" style={{ backgroundColor: `${color.primary}15`, color: color.primary }}>
+                    {athlete?.primary_position}
+                  </span>
+                  {athlete?.secondary_position && (
+                    <span className="text-sm text-gray-500">/ {athlete.secondary_position}</span>
+                  )}
                 </div>
               </div>
             </div>
 
-            {/* Details */}
-            <div className="grid grid-cols-2 gap-4 pt-4 border-t border-[#2a2d35]">
-              <div className="flex items-center gap-2 text-gray-400">
-                <GraduationCap className="w-4 h-4" />
-                <span>Class of {athlete?.graduation_year}</span>
-              </div>
+            <div className="grid grid-cols-2 gap-3 pt-5 border-t border-white/[0.06]">
+              <InfoItem icon={<GraduationCap className="w-4 h-4" />} label="Class" value={`${athlete?.graduation_year}`} />
               {athlete?.high_school && (
-                <div className="flex items-center gap-2 text-gray-400">
-                  <Trophy className="w-4 h-4" />
-                  <span>{athlete.high_school}</span>
-                </div>
+                <InfoItem icon={<Trophy className="w-4 h-4" />} label="School" value={athlete.high_school} />
               )}
               {athlete?.city && athlete?.state && (
-                <div className="flex items-center gap-2 text-gray-400">
-                  <MapPin className="w-4 h-4" />
-                  <span>{athlete.city}, {athlete.state}</span>
-                </div>
+                <InfoItem icon={<MapPin className="w-4 h-4" />} label="Location" value={`${athlete.city}, ${athlete.state}`} />
               )}
               {athlete?.height_feet && (
-                <div className="text-gray-400">
-                  {athlete.height_feet}&apos;{athlete.height_inches || 0}&quot; • {athlete.weight_lbs || '---'} lbs
-                </div>
+                <InfoItem icon={<TrendingUp className="w-4 h-4" />} label="Measurables" value={`${athlete.height_feet}&apos;${athlete.height_inches || 0}&quot; / ${athlete.weight_lbs || '---'} lbs`} />
               )}
             </div>
 
-            {/* GPA */}
             {athlete?.gpa && (
-              <div className="pt-4 border-t border-[#2a2d35]">
-                <span className="text-gray-500 text-sm">GPA</span>
-                <div className="text-white font-bold text-lg">{athlete.gpa.toFixed(2)}</div>
+              <div className="pt-4 border-t border-white/[0.06]">
+                <div className="text-xs text-gray-600 uppercase tracking-wider">GPA</div>
+                <div className="text-white font-bold text-xl mt-0.5">{athlete.gpa.toFixed(2)}</div>
               </div>
             )}
           </div>
         </div>
 
-        {/* Right Column - Contact & Links */}
-        <div className="bg-[#12141a] border border-[#2a2d35] rounded-xl p-6">
-          <h2 className="text-lg font-semibold text-white mb-4">Contact & Links</h2>
+        {/* Contact & Links */}
+        <div className="glass-card p-6">
+          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-5">Contact & Links</h2>
 
-          <div className="space-y-3">
-            {athlete?.phone ? (
-              <div className="flex items-center gap-3 p-3 bg-[#0a0a0f] rounded-lg">
-                <Phone className="w-5 h-5 text-green-500" />
-                <span className="text-white">{athlete.phone}</span>
-                <CheckCircle className="w-4 h-4 text-green-500 ml-auto" />
-              </div>
-            ) : (
-              <div className="flex items-center gap-3 p-3 bg-[#0a0a0f] rounded-lg border border-dashed border-[#2a2d35]">
-                <Phone className="w-5 h-5 text-gray-500" />
-                <span className="text-gray-500">Add phone number</span>
-                <AlertCircle className="w-4 h-4 text-yellow-500 ml-auto" />
-              </div>
-            )}
-
-            {athlete?.parent_email ? (
-              <div className="flex items-center gap-3 p-3 bg-[#0a0a0f] rounded-lg">
-                <Mail className="w-5 h-5 text-green-500" />
-                <span className="text-white truncate">{athlete.parent_email}</span>
-                <CheckCircle className="w-4 h-4 text-green-500 ml-auto" />
-              </div>
-            ) : (
-              <div className="flex items-center gap-3 p-3 bg-[#0a0a0f] rounded-lg border border-dashed border-[#2a2d35]">
-                <Mail className="w-5 h-5 text-gray-500" />
-                <span className="text-gray-500">Add parent email (NCAA required)</span>
-                <AlertCircle className="w-4 h-4 text-yellow-500 ml-auto" />
-              </div>
-            )}
-
-            {athlete?.twitter_handle ? (
-              <a
-                href={`https://twitter.com/${athlete.twitter_handle}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 p-3 bg-[#0a0a0f] rounded-lg hover:bg-[#1a1c22] transition-colors"
-              >
-                <Twitter className="w-5 h-5 text-[#1DA1F2]" />
-                <span className="text-white">@{athlete.twitter_handle}</span>
-                <ExternalLink className="w-4 h-4 text-gray-500 ml-auto" />
-              </a>
-            ) : (
-              <div className="flex items-center gap-3 p-3 bg-[#0a0a0f] rounded-lg border border-dashed border-[#2a2d35]">
-                <Twitter className="w-5 h-5 text-gray-500" />
-                <span className="text-gray-500">Add Twitter handle</span>
-              </div>
-            )}
-
-            {athlete?.hudl_link ? (
-              <a
-                href={athlete.hudl_link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 p-3 bg-[#0a0a0f] rounded-lg hover:bg-[#1a1c22] transition-colors"
-              >
-                <div className="w-5 h-5 bg-orange-500 rounded text-white text-xs font-bold flex items-center justify-center">
-                  H
-                </div>
-                <span className="text-white">Hudl Profile</span>
-                <ExternalLink className="w-4 h-4 text-gray-500 ml-auto" />
-              </a>
-            ) : (
-              <div className="flex items-center gap-3 p-3 bg-[#0a0a0f] rounded-lg border border-dashed border-[#2a2d35]">
-                <div className="w-5 h-5 bg-gray-600 rounded text-white text-xs font-bold flex items-center justify-center">
-                  H
-                </div>
-                <span className="text-gray-500">Add Hudl profile link</span>
-                <AlertCircle className="w-4 h-4 text-yellow-500 ml-auto" />
-              </div>
-            )}
+          <div className="space-y-2.5">
+            <ContactRow
+              icon={<Phone className="w-4 h-4" />}
+              value={athlete?.phone}
+              placeholder="Add phone number"
+              activeColor="#22c55e"
+            />
+            <ContactRow
+              icon={<Mail className="w-4 h-4" />}
+              value={athlete?.parent_email}
+              placeholder="Add parent email (NCAA required)"
+              activeColor="#22c55e"
+            />
+            <ContactRow
+              icon={<Twitter className="w-4 h-4" />}
+              value={athlete?.twitter_handle ? `@${athlete.twitter_handle}` : null}
+              placeholder="Add Twitter handle"
+              activeColor="#1DA1F2"
+              href={athlete?.twitter_handle ? `https://twitter.com/${athlete.twitter_handle}` : undefined}
+            />
+            <ContactRow
+              icon={<span className="w-4 h-4 bg-orange-500 rounded text-white text-[10px] font-bold flex items-center justify-center">H</span>}
+              value={athlete?.hudl_link ? 'Hudl Profile' : null}
+              placeholder="Add Hudl profile link"
+              activeColor="#f97316"
+              href={athlete?.hudl_link || undefined}
+            />
           </div>
         </div>
       </div>
 
       {/* Quick Actions */}
-      <div className="bg-[#12141a] border border-[#2a2d35] rounded-xl p-6">
-        <h2 className="text-lg font-semibold text-white mb-4">Quick Actions</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <Link
-            href="/coaches"
-            className="p-4 bg-[#0a0a0f] rounded-lg hover:bg-[#1a1c22] transition-colors text-center"
-          >
-            <Search className="w-8 h-8 mx-auto mb-2" style={{ color: color.primary }} />
-            <div className="text-white font-medium">Search Coaches</div>
-            <div className="text-gray-500 text-sm">Browse 8,783+ coaches</div>
-          </Link>
-          <Link
-            href={`/dashboard/athlete/profile`}
-            className="p-4 bg-[#0a0a0f] rounded-lg hover:bg-[#1a1c22] transition-colors text-center"
-          >
-            <User className="w-8 h-8 mx-auto mb-2" style={{ color: color.primary }} />
-            <div className="text-white font-medium">Edit Profile</div>
-            <div className="text-gray-500 text-sm">Update your info</div>
-          </Link>
-          <div className="p-4 bg-[#0a0a0f] rounded-lg text-center opacity-50">
-            <Mail className="w-8 h-8 mx-auto mb-2 text-gray-500" />
-            <div className="text-gray-400 font-medium">Message Coaches</div>
-            <div className="text-gray-500 text-sm">Coming soon</div>
-          </div>
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <ActionCard
+          href="/coaches"
+          icon={<Search className="w-6 h-6" />}
+          color={color.primary}
+          title="Search Coaches"
+          subtitle="3,423+ verified coaches"
+        />
+        <ActionCard
+          href="/fit-finder"
+          icon={<Target className="w-6 h-6" />}
+          color="#d4af37"
+          title="Fit Finder"
+          subtitle="See where you match"
+        />
+        <ActionCard
+          href={`/dashboard/athlete/profile`}
+          icon={<User className="w-6 h-6" />}
+          color="#9333ea"
+          title="Edit Profile"
+          subtitle="Update your info"
+        />
       </div>
     </div>
   )
 }
 
+function InfoItem({ icon, label, value }: { icon: React.ReactNode; label: string; value: string }) {
+  return (
+    <div className="flex items-start gap-2.5">
+      <span className="text-gray-600 mt-0.5">{icon}</span>
+      <div>
+        <div className="text-[10px] text-gray-600 uppercase tracking-wider">{label}</div>
+        <div className="text-sm text-gray-300">{value}</div>
+      </div>
+    </div>
+  )
+}
+
+function ContactRow({
+  icon,
+  value,
+  placeholder,
+  activeColor,
+  href,
+}: {
+  icon: React.ReactNode
+  value: string | null | undefined
+  placeholder: string
+  activeColor: string
+  href?: string
+}) {
+  const inner = (
+    <div className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors ${
+      value
+        ? 'bg-white/[0.03] hover:bg-white/[0.05]'
+        : 'bg-white/[0.02] border border-dashed border-white/[0.06]'
+    }`}>
+      <span style={{ color: value ? activeColor : '#4b5563' }}>{icon}</span>
+      <span className={value ? 'text-white text-sm' : 'text-gray-600 text-sm'}>{value || placeholder}</span>
+      {value ? (
+        href ? <ExternalLink className="w-3.5 h-3.5 text-gray-600 ml-auto" /> : <CheckCircle className="w-3.5 h-3.5 text-green-500 ml-auto" />
+      ) : (
+        <AlertCircle className="w-3.5 h-3.5 text-yellow-600 ml-auto" />
+      )}
+    </div>
+  )
+
+  if (href) {
+    return <a href={href} target="_blank" rel="noopener noreferrer">{inner}</a>
+  }
+  return inner
+}
+
+function ActionCard({
+  href,
+  icon,
+  color,
+  title,
+  subtitle,
+}: {
+  href: string
+  icon: React.ReactNode
+  color: string
+  title: string
+  subtitle: string
+}) {
+  return (
+    <Link href={href} className="glass-card p-5 text-center group">
+      <div
+        className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform"
+        style={{ backgroundColor: `${color}15`, color }}
+      >
+        {icon}
+      </div>
+      <div className="text-white font-semibold text-sm">{title}</div>
+      <div className="text-gray-600 text-xs mt-0.5">{subtitle}</div>
+    </Link>
+  )
+}
+
 function calculateProfileCompletion(athlete: AthleteData): number {
   const fields = [
-    athlete.first_name,
-    athlete.last_name,
-    athlete.primary_position,
-    athlete.graduation_year,
-    athlete.high_school,
-    athlete.city,
-    athlete.state,
-    athlete.height_feet,
-    athlete.weight_lbs,
-    athlete.gpa,
-    athlete.hudl_link,
-    athlete.twitter_handle,
-    athlete.phone,
-    athlete.parent_email,
+    athlete.first_name, athlete.last_name, athlete.primary_position,
+    athlete.graduation_year, athlete.high_school, athlete.city,
+    athlete.state, athlete.height_feet, athlete.weight_lbs,
+    athlete.gpa, athlete.hudl_link, athlete.twitter_handle,
+    athlete.phone, athlete.parent_email,
   ]
-
   const completed = fields.filter(f => f !== null && f !== '' && f !== undefined).length
   return Math.round((completed / fields.length) * 100)
 }
