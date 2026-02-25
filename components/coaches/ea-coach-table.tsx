@@ -128,19 +128,19 @@ export function EaCoachTable({
                   </div>
 
                   {/* Position */}
-                  <div className="text-gray-700 text-sm truncate font-medium" title={coach.position_title || undefined}>
-                    {coach.position_title || '—'}
+                  <div className="text-gray-700 text-sm truncate font-medium" title={coach.title || undefined}>
+                    {coach.title || '—'}
                   </div>
 
                   {/* School - Clickable */}
                   <button
                     onClick={(e) => {
                       e.stopPropagation()
-                      onSchoolClick?.(coach.school_name)
+                      onSchoolClick?.(coach.school)
                     }}
                     className="text-gray-800 text-sm truncate text-left hover:text-ea-red hover:underline transition-colors"
                   >
-                    {coach.school_name}
+                    {coach.school}
                   </button>
 
                   {/* State */}
@@ -150,12 +150,12 @@ export function EaCoachTable({
 
                   {/* Division */}
                   <div className="text-gray-700 text-sm">
-                    {coach.division_level}
+                    {coach.division}
                   </div>
 
                   {/* Div Code - RED */}
                   <div className="text-ea-red font-black text-sm">
-                    {getDivisionCode(coach.division_level)}
+                    {getDivisionCode(coach.division)}
                   </div>
 
                   {/* Contact Icons */}

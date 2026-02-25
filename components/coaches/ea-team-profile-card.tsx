@@ -49,7 +49,7 @@ export function EaTeamProfileCard({
 
   // Filter and group coaches
   const schoolCoaches = useMemo(() => {
-    return coaches.filter((c) => c.school_name === schoolName)
+    return coaches.filter((c) => c.school === schoolName)
   }, [coaches, schoolName])
 
   const schoolInfo = schoolCoaches[0] || null
@@ -63,7 +63,7 @@ export function EaTeamProfileCard({
     }
 
     schoolCoaches.forEach((coach) => {
-      const title = coach.position_title?.toLowerCase() || ''
+      const title = coach.title?.toLowerCase() || ''
       if (title.includes('head coach')) {
         groups['Head Coach'].push(coach)
       } else if (title.includes('coordinator') || title === 'oc' || title === 'dc') {
@@ -134,7 +134,7 @@ export function EaTeamProfileCard({
           {schoolInfo && (
             <>
               <div className="text-xs font-bold text-[#c41e3a] uppercase tracking-[0.15em] mt-0.5">
-                {getDivisionLabel(schoolInfo.division_level)}
+                {getDivisionLabel(schoolInfo.division)}
               </div>
               <div className="flex items-center gap-3 mt-1 text-[10px] text-gray-500">
                 {schoolInfo.conference && (
@@ -254,7 +254,7 @@ export function EaTeamProfileCard({
                                 {coach.first_name} {coach.last_name}
                               </div>
                               <div className="text-[10px] text-gray-600">
-                                {coach.position_title}
+                                {coach.title}
                               </div>
                             </div>
                             <ChevronRight className="w-3.5 h-3.5 text-gray-700 group-hover:text-[#d4af37] group-hover:translate-x-1 transition-all" />

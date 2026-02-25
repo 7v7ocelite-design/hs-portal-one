@@ -61,13 +61,13 @@ export default function TeamPortalPage() {
   const schools = useMemo(() => {
     const schoolMap = new Map<string, { name: string; division: string; state: string | null; coachCount: number }>()
     coaches.forEach((c) => {
-      const existing = schoolMap.get(c.school_name)
+      const existing = schoolMap.get(c.school)
       if (existing) {
         existing.coachCount++
       } else {
-        schoolMap.set(c.school_name, {
-          name: c.school_name,
-          division: c.division_level,
+        schoolMap.set(c.school, {
+          name: c.school,
+          division: c.division,
           state: c.state,
           coachCount: 1,
         })
@@ -85,12 +85,12 @@ export default function TeamPortalPage() {
         (c) =>
           c.first_name.toLowerCase().includes(q) ||
           c.last_name.toLowerCase().includes(q) ||
-          c.school_name.toLowerCase().includes(q) ||
-          c.position_title.toLowerCase().includes(q)
+          c.school.toLowerCase().includes(q) ||
+          c.title.toLowerCase().includes(q)
       )
     }
     if (divisionFilter) {
-      result = result.filter((c) => c.division_level === divisionFilter)
+      result = result.filter((c) => c.division === divisionFilter)
     }
     return result.slice(0, 50)
   }, [coaches, searchQuery, divisionFilter])
@@ -220,7 +220,7 @@ export default function TeamPortalPage() {
                       <EaCoachCardHud
                         key={coach.id}
                         coach={coach}
-                        onClick={() => handleSchoolClick(coach.school_name)}
+                        onClick={() => handleSchoolClick(coach.school)}
                         onFavorite={() => {}}
                       />
                     ))}

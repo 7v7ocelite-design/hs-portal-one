@@ -11,19 +11,19 @@ export function useCoaches(filters: CoachFilters = {}) {
     queryKey: ['coaches', filters],
     queryFn: async (): Promise<Coach[]> => {
       let query = supabase
-        .from('coaches')
+        .from('tier1_coaches')
         .select('*')
-        .range(0, 9999)   // Override Supabase's 1,000 row default
-        .order('school_name')
+        .range(0, 9999)
+        .order('school')
 
       if (filters.division) {
-        query = query.eq('division_level', filters.division)
+        query = query.eq('division', filters.division)
       }
       if (filters.state) {
         query = query.eq('state', filters.state)
       }
       if (filters.position) {
-        query = query.ilike('position_title', `%${filters.position}%`)
+        query = query.ilike('title', `%${filters.position}%`)
       }
       if (filters.conference) {
         query = query.eq('conference', filters.conference)
@@ -36,7 +36,7 @@ export function useCoaches(filters: CoachFilters = {}) {
       }
       if (filters.search) {
         query = query.or(
-          `first_name.ilike.%${filters.search}%,last_name.ilike.%${filters.search}%,school_name.ilike.%${filters.search}%`
+          `first_name.ilike.%${filters.search}%,last_name.ilike.%${filters.search}%,school.ilike.%${filters.search}%`
         )
       }
 
@@ -55,27 +55,26 @@ export function useCoachesPaginated(filters: CoachFilters = {}) {
     queryKey: ['coaches-paginated', filters],
     queryFn: async ({ pageParam = 0 }): Promise<{ coaches: Coach[]; nextPage: number | null; total: number }> => {
       let countQuery = supabase
-        .from('coaches')
+        .from('tier1_coaches')
         .select('*', { count: 'exact', head: true })
 
       let query = supabase
-        .from('coaches')
+        .from('tier1_coaches')
         .select('*')
-        .order('school_name')
+        .order('school')
         .range(pageParam * PAGE_SIZE, (pageParam + 1) * PAGE_SIZE - 1)
 
-      // Apply filters to both queries
       if (filters.division) {
-        query = query.eq('division_level', filters.division)
-        countQuery = countQuery.eq('division_level', filters.division)
+        query = query.eq('division', filters.division)
+        countQuery = countQuery.eq('division', filters.division)
       }
       if (filters.state) {
         query = query.eq('state', filters.state)
         countQuery = countQuery.eq('state', filters.state)
       }
       if (filters.position) {
-        query = query.ilike('position_title', `%${filters.position}%`)
-        countQuery = countQuery.ilike('position_title', `%${filters.position}%`)
+        query = query.ilike('title', `%${filters.position}%`)
+        countQuery = countQuery.ilike('title', `%${filters.position}%`)
       }
       if (filters.conference) {
         query = query.eq('conference', filters.conference)
@@ -90,7 +89,7 @@ export function useCoachesPaginated(filters: CoachFilters = {}) {
         countQuery = countQuery.not('twitter', 'is', null)
       }
       if (filters.search) {
-        const searchFilter = `first_name.ilike.%${filters.search}%,last_name.ilike.%${filters.search}%,school_name.ilike.%${filters.search}%`
+        const searchFilter = `first_name.ilike.%${filters.search}%,last_name.ilike.%${filters.search}%,school.ilike.%${filters.search}%`
         query = query.or(searchFilter)
         countQuery = countQuery.or(searchFilter)
       }
@@ -123,7 +122,7 @@ export function useCoach(id: string) {
     queryKey: ['coach', id],
     queryFn: async (): Promise<Coach | null> => {
       const { data, error } = await supabase
-        .from('coaches')
+        .from('tier1_coaches')
         .select('*')
         .eq('id', id)
         .single()

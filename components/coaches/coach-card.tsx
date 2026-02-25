@@ -55,14 +55,14 @@ export function CoachCard({ coach, isFavorited, onFavorite, onClick }: CoachCard
       </h3>
 
       {/* School */}
-      <p className="text-gray-400 text-sm mt-0.5">{coach.school_name}</p>
+      <p className="text-gray-400 text-sm mt-0.5">{coach.school}</p>
 
       {/* Position */}
-      <p className="text-gray-500 text-sm">{coach.position_title}</p>
+      <p className="text-gray-500 text-sm">{coach.title}</p>
 
       {/* Division badge */}
       <Badge variant="coach" className="mt-2">
-        {coach.division_level}
+        {coach.division}
       </Badge>
 
       {/* Contact icons */}

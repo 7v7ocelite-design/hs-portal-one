@@ -47,7 +47,7 @@ export default function CoachesPage() {
   // Copy to clipboard as formatted text
   const handleExport = useCallback(() => {
     const text = filteredCoaches.map(c =>
-      `${c.first_name} ${c.last_name} - ${c.position_title}\n${c.school_name} (${c.division_level})\n${c.email || 'No email'} | ${c.twitter ? '@' + c.twitter : 'No Twitter'}`
+      `${c.first_name} ${c.last_name} - ${c.title}\n${c.school} (${c.division})\n${c.email || 'No email'} | ${c.twitter ? '@' + c.twitter : 'No Twitter'}`
     ).join('\n\n---\n\n')
 
     navigator.clipboard.writeText(text).then(() => {
@@ -70,10 +70,10 @@ export default function CoachesPage() {
       [
         escapeCSV(c.first_name),
         escapeCSV(c.last_name),
-        escapeCSV(c.position_title),
-        escapeCSV(c.school_name),
+        escapeCSV(c.title),
+        escapeCSV(c.school),
         escapeCSV(c.state),
-        escapeCSV(c.division_level),
+        escapeCSV(c.division),
         escapeCSV(c.conference),
         escapeCSV(c.email),
         escapeCSV(c.twitter),

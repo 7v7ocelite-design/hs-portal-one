@@ -27,10 +27,10 @@ export function CoachModal({ coach, isOpen, onClose, onSchoolClick, isAdmin = fa
       setEditData({
         first_name: coach.first_name,
         last_name: coach.last_name,
-        position_title: coach.position_title,
-        school_name: coach.school_name,
+        title: coach.title,
+        school: coach.school,
         state: coach.state,
-        division_level: coach.division_level,
+        division: coach.division,
         conference: coach.conference,
         email: coach.email,
         twitter: coach.twitter,
@@ -77,10 +77,10 @@ export function CoachModal({ coach, isOpen, onClose, onSchoolClick, isAdmin = fa
         .update({
           first_name: editData.first_name,
           last_name: editData.last_name,
-          position_title: editData.position_title,
-          school_name: editData.school_name,
+          title: editData.title,
+          school: editData.school,
           state: editData.state,
-          division_level: editData.division_level,
+          division: editData.division,
           conference: editData.conference,
           email: editData.email,
           twitter: editData.twitter,
@@ -206,8 +206,8 @@ export function CoachModal({ coach, isOpen, onClose, onSchoolClick, isAdmin = fa
                 <label className="text-xs text-gray-400 uppercase tracking-wider">Position Title</label>
                 <input
                   type="text"
-                  value={editData.position_title || ''}
-                  onChange={(e) => setEditData({ ...editData, position_title: e.target.value })}
+                  value={editData.title || ''}
+                  onChange={(e) => setEditData({ ...editData, title: e.target.value })}
                   className="w-full mt-1 px-3 py-2 bg-black/60 border border-gray-600 rounded text-white focus:border-ea-red focus:outline-none"
                 />
               </div>
@@ -217,8 +217,8 @@ export function CoachModal({ coach, isOpen, onClose, onSchoolClick, isAdmin = fa
                 <label className="text-xs text-gray-400 uppercase tracking-wider">School</label>
                 <input
                   type="text"
-                  value={editData.school_name || ''}
-                  onChange={(e) => setEditData({ ...editData, school_name: e.target.value })}
+                  value={editData.school || ''}
+                  onChange={(e) => setEditData({ ...editData, school: e.target.value })}
                   className="w-full mt-1 px-3 py-2 bg-black/60 border border-gray-600 rounded text-white focus:border-ea-red focus:outline-none"
                 />
               </div>
@@ -238,8 +238,8 @@ export function CoachModal({ coach, isOpen, onClose, onSchoolClick, isAdmin = fa
                 <div>
                   <label className="text-xs text-gray-400 uppercase tracking-wider">Division</label>
                   <select
-                    value={editData.division_level || ''}
-                    onChange={(e) => setEditData({ ...editData, division_level: e.target.value })}
+                    value={editData.division || ''}
+                    onChange={(e) => setEditData({ ...editData, division: e.target.value })}
                     className="w-full mt-1 px-3 py-2 bg-black/60 border border-gray-600 rounded text-white focus:border-ea-red focus:outline-none"
                   >
                     <option value="">Select...</option>
@@ -316,7 +316,7 @@ export function CoachModal({ coach, isOpen, onClose, onSchoolClick, isAdmin = fa
                   {coach.first_name} {coach.last_name}
                 </h2>
                 <p className="text-ea-red font-bold uppercase tracking-wider">
-                  {coach.position_title}
+                  {coach.title}
                 </p>
               </div>
 
@@ -329,12 +329,12 @@ export function CoachModal({ coach, isOpen, onClose, onSchoolClick, isAdmin = fa
                   <Building2 className="w-5 h-5 text-ea-red shrink-0 mt-0.5" />
                   <div>
                     <button
-                      onClick={() => onSchoolClick?.(coach.school_name)}
+                      onClick={() => onSchoolClick?.(coach.school)}
                       className="text-white font-bold hover:text-ea-red transition-colors text-left"
                     >
-                      {coach.school_name}
+                      {coach.school}
                     </button>
-                    <p className="text-sm text-gray-400">{getDivisionLabel(coach.division_level)}</p>
+                    <p className="text-sm text-gray-400">{getDivisionLabel(coach.division)}</p>
                     {coach.conference && (
                       <p className="text-sm text-gray-500">{coach.conference}</p>
                     )}
@@ -438,12 +438,12 @@ export function CoachModal({ coach, isOpen, onClose, onSchoolClick, isAdmin = fa
               <button
                 onClick={() => {
                   onClose()
-                  onSchoolClick?.(coach.school_name)
+                  onSchoolClick?.(coach.school)
                 }}
                 className="ea-button-gold w-full flex items-center justify-center gap-2"
               >
-                VIEW FULL STAFF AT {coach.school_name.toUpperCase().slice(0, 25)}
-                {coach.school_name.length > 25 && '...'}
+                VIEW FULL STAFF AT {coach.school.toUpperCase().slice(0, 25)}
+                {coach.school.length > 25 && '...'}
               </button>
             </>
           )}

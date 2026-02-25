@@ -108,16 +108,16 @@ export function EaCoachCardHud({
 
           {/* Position */}
           <div className="text-xs font-bold text-[#c41e3a] uppercase tracking-[0.15em] mt-0.5 truncate">
-            {coach.position_title}
+            {coach.title}
           </div>
 
           {/* School + Division */}
           <div className="flex items-center gap-2 mt-2 flex-wrap">
             <span className="text-xs text-gray-400 font-semibold truncate max-w-[180px]">
-              {coach.school_name}
+              {coach.school}
             </span>
             <span className="ea-badge text-white text-[8px] py-0.5 px-1.5">
-              {coach.division_level}
+              {coach.division}
             </span>
             {coach.conference && (
               <span className="text-[10px] text-gray-600 truncate">

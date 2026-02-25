@@ -2,9 +2,9 @@ export interface Coach {
   id: number
   first_name: string
   last_name: string
-  school_name: string
-  position_title: string
-  division_level: string
+  school: string
+  title: string
+  division: string
   conference: string | null
   state: string | null
   email: string | null

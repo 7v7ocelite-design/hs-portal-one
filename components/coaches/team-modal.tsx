@@ -36,7 +36,7 @@ export function TeamModal({ schoolName, isOpen, onClose, coaches, onCoachClick }
   // Filter coaches for this school - MUST be before conditional return
   const schoolCoaches = useMemo(() => {
     if (!schoolName) return []
-    return coaches.filter(c => c.school_name === schoolName)
+    return coaches.filter(c => c.school === schoolName)
   }, [coaches, schoolName])
 
   // Get school info from first coach
@@ -54,7 +54,7 @@ export function TeamModal({ schoolName, isOpen, onClose, coaches, onCoachClick }
     }
 
     schoolCoaches.forEach(coach => {
-      const title = coach.position_title?.toLowerCase() || ''
+      const title = coach.title?.toLowerCase() || ''
       if (title.includes('head coach')) {
         groups['Head Coach'].push(coach)
       } else if (title.includes('coordinator')) {
@@ -140,7 +140,7 @@ export function TeamModal({ schoolName, isOpen, onClose, coaches, onCoachClick }
                 {schoolInfo && (
                   <>
                     <p className="text-ea-red font-bold uppercase tracking-wider text-sm">
-                      {getDivisionLabel(schoolInfo.division_level)}
+                      {getDivisionLabel(schoolInfo.division)}
                     </p>
                     {schoolInfo.conference && (
                       <p className="text-gray-400 text-sm">{schoolInfo.conference}</p>
@@ -198,7 +198,7 @@ export function TeamModal({ schoolName, isOpen, onClose, coaches, onCoachClick }
                               {coach.first_name} {coach.last_name}
                             </div>
                             <div className="text-gray-500 text-xs group-hover:text-black/70">
-                              {coach.position_title}
+                              {coach.title}
                             </div>
                           </div>
                           <ChevronRight className="w-5 h-5 text-gray-600 group-hover:text-black group-hover:translate-x-1 transition-all" />
