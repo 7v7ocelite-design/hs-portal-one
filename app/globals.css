@@ -341,3 +341,429 @@ body {
 }
 
 .animate-count-up { animation: count-up 0.5s ease-out forwards; }
+
+/* ================================
+   FOOTBALL / STADIUM ATMOSPHERE
+   ================================ */
+
+/* Stadium night sky with lights */
+.stadium-bg {
+  position: relative;
+  overflow: hidden;
+  background:
+    /* Stadium flood lights - top left and right */
+    radial-gradient(ellipse 35% 25% at 12% -5%, rgba(255, 255, 255, 0.12), transparent 70%),
+    radial-gradient(ellipse 35% 25% at 88% -5%, rgba(255, 255, 255, 0.12), transparent 70%),
+    /* Center light wash */
+    radial-gradient(ellipse 60% 30% at 50% -8%, rgba(255, 255, 255, 0.06), transparent 60%),
+    /* Light spill onto field */
+    radial-gradient(ellipse 80% 40% at 50% 30%, rgba(196, 30, 58, 0.04), transparent 70%),
+    /* Night sky gradient */
+    linear-gradient(180deg, #050510 0%, #0a0a14 30%, #0a0a0f 100%);
+}
+
+/* Light beam rays from stadium lights */
+.stadium-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    /* Left light beam */
+    conic-gradient(from 200deg at 12% -5%, transparent 0deg, rgba(255,255,255,0.03) 10deg, transparent 25deg),
+    /* Right light beam */
+    conic-gradient(from 330deg at 88% -5%, transparent 0deg, rgba(255,255,255,0.03) 10deg, transparent 25deg);
+  pointer-events: none;
+}
+
+/* Football field turf texture */
+.turf-texture {
+  position: relative;
+}
+
+.turf-texture::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(34, 139, 34, 0.5) 0px,
+      rgba(34, 139, 34, 0.5) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  pointer-events: none;
+}
+
+/* Yard lines overlay (horizontal) */
+.yard-lines {
+  position: relative;
+}
+
+.yard-lines::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  opacity: 0.04;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent calc(10% - 1px),
+      rgba(255, 255, 255, 0.8) calc(10% - 1px),
+      rgba(255, 255, 255, 0.8) 10%
+    );
+  mask-image: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+/* Scoreboard / broadcast ticker style */
+.broadcast-bar {
+  background: linear-gradient(90deg, #c41e3a 0%, #8b1429 40%, #0a0a0f 40.5%, #0a0a0f 100%);
+  border-top: 2px solid #c41e3a;
+  border-bottom: 1px solid rgba(196, 30, 58, 0.3);
+}
+
+/* ESPN-style stat box */
+.stat-broadcast {
+  background: linear-gradient(180deg, rgba(15, 15, 20, 0.95) 0%, rgba(10, 10, 15, 0.98) 100%);
+  border: 1px solid rgba(196, 30, 58, 0.3);
+  border-left: 3px solid var(--accent-red);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%);
+}
+
+/* Field hash marks (decorative top/bottom borders) */
+.hash-marks {
+  position: relative;
+}
+
+.hash-marks::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      var(--accent-red) 0px,
+      var(--accent-red) 20px,
+      transparent 20px,
+      transparent 30px
+    );
+}
+
+/* Animated stadium light sweep */
+@keyframes light-sweep {
+  0% { opacity: 0; transform: translateX(-100%) skewX(-15deg); }
+  50% { opacity: 0.06; }
+  100% { opacity: 0; transform: translateX(200%) skewX(-15deg); }
+}
+
+.light-sweep::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  width: 40%;
+  animation: light-sweep 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Football lace pattern (decorative divider) */
+.lace-divider {
+  position: relative;
+  height: 2px;
+  background: rgba(139, 90, 43, 0.3);
+}
+
+.lace-divider::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 8px;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 8px,
+      rgba(255, 255, 255, 0.15) 8px,
+      rgba(255, 255, 255, 0.15) 10px,
+      transparent 10px,
+      transparent 18px
+    );
+}
+
+/* Scoreboard number style */
+.scoreboard-num {
+  font-variant-numeric: tabular-nums;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  text-shadow: 0 0 20px rgba(196, 30, 58, 0.4);
+}
+
+/* Stadium section header */
+.section-header-stadium {
+  position: relative;
+  padding-left: 16px;
+}
+
+.section-header-stadium::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--accent-red), var(--accent-gold));
+  border-radius: 2px;
+}
+
+/* ================================
+   EA SPORTS CFB25 LANDING PAGE
+   ================================ */
+
+/* Full-bleed stadium with crowd silhouette */
+.ea-hero-stadium {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background:
+    /* Stadium flood lights */
+    radial-gradient(ellipse 40% 20% at 15% -3%, rgba(255, 255, 255, 0.15), transparent 60%),
+    radial-gradient(ellipse 40% 20% at 85% -3%, rgba(255, 255, 255, 0.15), transparent 60%),
+    radial-gradient(ellipse 50% 25% at 50% -5%, rgba(255, 255, 255, 0.08), transparent 50%),
+    /* Red ambient glow on field */
+    radial-gradient(ellipse 100% 50% at 50% 80%, rgba(196, 30, 58, 0.06), transparent 60%),
+    /* Turf-like texture */
+    repeating-linear-gradient(90deg, rgba(10, 35, 10, 0.15) 0px, rgba(10, 35, 10, 0.15) 80px, rgba(15, 45, 15, 0.15) 80px, rgba(15, 45, 15, 0.15) 160px),
+    /* Night sky */
+    linear-gradient(180deg, #020208 0%, #080815 25%, #0a0a14 50%, #0a0a0f 100%);
+}
+
+/* Light beams from stadium towers */
+.ea-hero-stadium::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    conic-gradient(from 195deg at 15% -3%, transparent 0deg, rgba(255, 255, 255, 0.04) 8deg, transparent 20deg),
+    conic-gradient(from 335deg at 85% -3%, transparent 0deg, rgba(255, 255, 255, 0.04) 8deg, transparent 20deg),
+    conic-gradient(from 260deg at 50% -5%, transparent 0deg, rgba(255, 255, 255, 0.02) 5deg, transparent 15deg);
+  pointer-events: none;
+}
+
+/* Crowd silhouette at top */
+.ea-hero-stadium::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 180px;
+  opacity: 0.06;
+  background:
+    /* Crowd bumps - irregular shapes */
+    radial-gradient(ellipse 3% 80% at 5% 100%, #fff, transparent),
+    radial-gradient(ellipse 2% 60% at 8% 100%, #fff, transparent),
+    radial-gradient(ellipse 4% 90% at 12% 100%, #fff, transparent),
+    radial-gradient(ellipse 2% 70% at 16% 100%, #fff, transparent),
+    radial-gradient(ellipse 3% 85% at 20% 100%, #fff, transparent),
+    radial-gradient(ellipse 2% 65% at 24% 100%, #fff, transparent),
+    radial-gradient(ellipse 4% 75% at 28% 100%, #fff, transparent),
+    radial-gradient(ellipse 3% 80% at 33% 100%, #fff, transparent),
+    radial-gradient(ellipse 2% 70% at 37% 100%, #fff, transparent),
+    radial-gradient(ellipse 3% 90% at 42% 100%, #fff, transparent),
+    radial-gradient(ellipse 2% 60% at 46% 100%, #fff, transparent),
+    radial-gradient(ellipse 4% 85% at 50% 100%, #fff, transparent),
+    radial-gradient(ellipse 2% 75% at 54% 100%, #fff, transparent),
+    radial-gradient(ellipse 3% 70% at 58% 100%, #fff, transparent),
+    radial-gradient(ellipse 2% 80% at 62% 100%, #fff, transparent),
+    radial-gradient(ellipse 4% 65% at 67% 100%, #fff, transparent),
+    radial-gradient(ellipse 3% 85% at 72% 100%, #fff, transparent),
+    radial-gradient(ellipse 2% 75% at 76% 100%, #fff, transparent),
+    radial-gradient(ellipse 3% 80% at 80% 100%, #fff, transparent),
+    radial-gradient(ellipse 2% 70% at 84% 100%, #fff, transparent),
+    radial-gradient(ellipse 4% 90% at 88% 100%, #fff, transparent),
+    radial-gradient(ellipse 3% 65% at 92% 100%, #fff, transparent),
+    radial-gradient(ellipse 2% 80% at 96% 100%, #fff, transparent);
+  pointer-events: none;
+}
+
+/* EA-style angular panel for landing sections */
+.ea-landing-panel {
+  background: linear-gradient(135deg, rgba(12, 12, 18, 0.95) 0%, rgba(8, 8, 12, 0.98) 100%);
+  border: 1px solid rgba(196, 30, 58, 0.4);
+  clip-path: polygon(0 12px, 12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%);
+  position: relative;
+  box-shadow: 0 0 25px rgba(196, 30, 58, 0.15), inset 0 0 40px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.ea-landing-panel:hover {
+  border-color: rgba(196, 30, 58, 0.6);
+  box-shadow: 0 0 35px rgba(196, 30, 58, 0.25), inset 0 0 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Red gradient header bar for panels */
+.ea-header-bar {
+  background: linear-gradient(90deg, var(--accent-red) 0%, #8b1429 60%, transparent 100%);
+  padding: 10px 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 12px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Neon stat card */
+.ea-stat-card {
+  background: linear-gradient(180deg, rgba(15, 15, 20, 0.95) 0%, rgba(8, 8, 12, 0.98) 100%);
+  border: 1px solid rgba(196, 30, 58, 0.3);
+  border-top: 3px solid var(--accent-red);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%);
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.ea-stat-card:hover {
+  border-color: rgba(196, 30, 58, 0.6);
+  box-shadow: 0 0 20px rgba(196, 30, 58, 0.2);
+}
+
+.ea-stat-card::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent-red), transparent);
+  opacity: 0.5;
+}
+
+/* Progress bar (influence bar) */
+.ea-progress-bar {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  overflow: hidden;
+}
+
+.ea-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #c41e3a, #ff1744);
+  box-shadow: 0 0 8px rgba(196, 30, 58, 0.5);
+  transition: width 0.8s ease;
+}
+
+/* Recruiting board row */
+.ea-board-row {
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  transition: all 0.15s ease;
+}
+
+.ea-board-row:hover {
+  background: rgba(196, 30, 58, 0.08);
+  border-left: 3px solid var(--accent-red);
+}
+
+/* Activity feed item */
+.ea-activity-item {
+  border-left: 2px solid rgba(196, 30, 58, 0.3);
+  padding-left: 12px;
+  transition: all 0.2s;
+}
+
+.ea-activity-item:hover {
+  border-left-color: var(--accent-red);
+  background: rgba(196, 30, 58, 0.04);
+}
+
+/* Ticker scroll animation */
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ea-ticker {
+  background: linear-gradient(90deg, var(--accent-red), #8b1429);
+  overflow: hidden;
+  position: relative;
+}
+
+.ea-ticker-content {
+  display: flex;
+  gap: 3rem;
+  white-space: nowrap;
+  animation: ticker-scroll 30s linear infinite;
+}
+
+/* Corner cut badge */
+.ea-badge {
+  background: var(--accent-red);
+  clip-path: polygon(0 4px, 4px 0, 100% 0, 100% calc(100% - 4px), calc(100% - 4px) 100%, 0 100%);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 10px;
+  padding: 4px 10px;
+}
+
+/* Pricing tier card */
+.ea-tier-card {
+  background: linear-gradient(180deg, rgba(15, 15, 20, 0.95) 0%, rgba(8, 8, 12, 0.98) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  clip-path: polygon(0 10px, 10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  transition: all 0.3s ease;
+}
+
+.ea-tier-card:hover {
+  border-color: rgba(196, 30, 58, 0.4);
+  transform: translateY(-4px);
+}
+
+.ea-tier-card.featured {
+  border-color: var(--accent-red);
+  box-shadow: 0 0 30px rgba(196, 30, 58, 0.2);
+}
+
+/* Star rating (recruit style) */
+.ea-star {
+  color: #d4af37;
+  filter: drop-shadow(0 0 4px rgba(212, 175, 55, 0.5));
+}
+
+/* Hotbed state glow (for map) */
+.ea-hotbed-glow {
+  filter: drop-shadow(0 0 6px rgba(196, 30, 58, 0.6));
+  fill: rgba(196, 30, 58, 0.7);
+}
+
+/* Scrolling activity feed */
+@keyframes scroll-feed {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+.ea-scroll-feed {
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+}
+
+.ea-scroll-feed-inner {
+  animation: scroll-feed 20s linear infinite;
+}

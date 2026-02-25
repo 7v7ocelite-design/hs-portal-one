@@ -151,7 +151,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         </nav>
 
         {/* User Info & Sign Out */}
-        <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-white/[0.06]">
+        <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-white/[0.06] hash-marks">
           <div className="flex items-center gap-3 mb-3">
             <div
               className="w-9 h-9 rounded-xl flex items-center justify-center text-white font-bold text-sm"
@@ -179,7 +179,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
       {/* Main Content */}
       <div className="flex-1 flex flex-col min-h-screen">
         {/* Mobile Header */}
-        <header className="lg:hidden sticky top-0 z-30 bg-[#0a0a0f]/80 backdrop-blur-xl border-b border-white/[0.06] px-4 py-3">
+        <header className="lg:hidden sticky top-0 z-30 bg-[#0a0a0f]/80 backdrop-blur-xl border-b border-white/[0.06] px-4 py-3 broadcast-bar">
           <div className="flex items-center justify-between">
             <button
               onClick={() => setSidebarOpen(true)}

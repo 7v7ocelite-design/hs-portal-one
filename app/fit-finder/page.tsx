@@ -228,7 +228,7 @@ export default function FitFinderPage() {
               <Target className="w-5 h-5 text-white" />
             </div>
             <div>
-              <h1 className="text-3xl font-bold text-white">Fit Finder</h1>
+              <h1 className="text-3xl font-bold text-white section-header-stadium pb-3">Fit Finder</h1>
               <p className="text-sm text-gray-400">Compare your stats against every division level</p>
             </div>
           </div>
@@ -239,7 +239,7 @@ export default function FitFinderPage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left: Input Form */}
           <div className="lg:col-span-1">
-            <div className="glass-card p-6 sticky top-24">
+            <div className="glass-card p-6 sticky top-24 hash-marks">
               <h2 className="text-lg font-bold text-white mb-5 flex items-center gap-2">
                 <Shield className="w-5 h-5 text-[#d4af37]" />
                 Your Profile
@@ -312,6 +312,9 @@ export default function FitFinderPage() {
             </div>
           </div>
 
+          {/* Lace Divider */}
+          <div className="lg:col-span-2 lace-divider my-4"></div>
+
           {/* Right: Results */}
           <div className="lg:col-span-2 space-y-8">
             {!showResults ? (
@@ -337,11 +340,13 @@ export default function FitFinderPage() {
                     {results.map(({ division, bench, scores }, idx) => (
                       <div
                         key={division}
-                        className="glass-card p-5"
+                        className="glass-card p-5 stat-broadcast"
                         style={{ animationDelay: `${idx * 0.1}s` }}
                       >
                         <div className="flex items-start gap-6">
-                          <ScoreRing score={scores.overall} size={90} />
+                          <div className="scoreboard-num">
+                            <ScoreRing score={scores.overall} size={90} />
+                          </div>
                           <div className="flex-1 min-w-0">
                             <div className="flex items-center gap-3 mb-4">
                               <h3 className="font-bold text-white text-lg">{DIVISION_LABELS[division]}</h3>
@@ -387,10 +392,12 @@ export default function FitFinderPage() {
 
                 {/* Depth Charts */}
                 <div className="animate-fade-in-delay-2">
-                  <h2 className="text-xl font-bold text-white mb-5 flex items-center gap-2">
-                    <Users className="w-5 h-5 text-[#d4af37]" />
-                    Live Depth Charts
-                  </h2>
+                  <div className="broadcast-bar mb-5 p-4 rounded-lg">
+                    <h2 className="text-xl font-bold text-white flex items-center gap-2">
+                      <Users className="w-5 h-5 text-[#d4af37]" />
+                      Live Depth Charts
+                    </h2>
+                  </div>
 
                   <div className="relative mb-5">
                     <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600" />

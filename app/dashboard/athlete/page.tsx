@@ -112,23 +112,23 @@ export default function AthleteDashboard() {
         </Link>
       </div>
 
-      {/* Profile Completion */}
-      <div className="glass-card p-5">
+      {/* Profile Completion - EA style */}
+      <div className="ea-landing-panel p-5">
         <div className="flex items-center justify-between mb-3">
           <div>
-            <h2 className="text-sm font-semibold text-white">Profile Completion</h2>
+            <h2 className="text-xs font-bold uppercase tracking-[0.15em] text-gray-400">Profile Completion</h2>
             {profileCompletion < 100 && (
               <p className="text-xs text-gray-500 mt-0.5">Complete your profile to increase visibility</p>
             )}
           </div>
-          <span className="text-2xl font-bold" style={{ color: completionColor }}>
+          <span className="text-2xl font-bold scoreboard-num" style={{ color: completionColor }}>
             {profileCompletion}%
           </span>
         </div>
-        <div className="h-1.5 bg-white/[0.04] rounded-full overflow-hidden">
+        <div className="ea-progress-bar">
           <div
-            className="h-full rounded-full transition-all duration-700 ease-out"
-            style={{ width: `${profileCompletion}%`, backgroundColor: completionColor }}
+            className="ea-progress-fill transition-all duration-700 ease-out"
+            style={{ width: `${profileCompletion}%`, background: `linear-gradient(90deg, ${completionColor}, ${completionColor}cc)` }}
           />
         </div>
       </div>
@@ -136,8 +136,8 @@ export default function AthleteDashboard() {
       {/* Main Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
         {/* Profile Overview */}
-        <div className="glass-card p-6">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-5 flex items-center gap-2">
+        <div className="ea-landing-panel p-6">
+          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-5 flex items-center gap-2 section-header-stadium">
             <User className="w-4 h-4" style={{ color: color.primary }} />
             Profile
           </h2>
@@ -188,8 +188,8 @@ export default function AthleteDashboard() {
         </div>
 
         {/* Contact & Links */}
-        <div className="glass-card p-6">
-          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-5">Contact & Links</h2>
+        <div className="ea-landing-panel p-6">
+          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-5 section-header-stadium">Contact & Links</h2>
 
           <div className="space-y-2.5">
             <ContactRow
@@ -230,6 +230,7 @@ export default function AthleteDashboard() {
           color={color.primary}
           title="Search Coaches"
           subtitle="3,423+ verified coaches"
+          className="stat-broadcast"
         />
         <ActionCard
           href="/fit-finder"
@@ -237,6 +238,7 @@ export default function AthleteDashboard() {
           color="#d4af37"
           title="Fit Finder"
           subtitle="See where you match"
+          className="stat-broadcast"
         />
         <ActionCard
           href={`/dashboard/athlete/profile`}
@@ -244,6 +246,7 @@ export default function AthleteDashboard() {
           color="#9333ea"
           title="Edit Profile"
           subtitle="Update your info"
+          className="stat-broadcast"
         />
       </div>
     </div>
@@ -303,15 +306,17 @@ function ActionCard({
   color,
   title,
   subtitle,
+  className,
 }: {
   href: string
   icon: React.ReactNode
   color: string
   title: string
   subtitle: string
+  className?: string
 }) {
   return (
-    <Link href={href} className="glass-card p-5 text-center group">
+    <Link href={href} className={`ea-landing-panel p-5 text-center group ${className || ''}`}>
       <div
         className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform"
         style={{ backgroundColor: `${color}15`, color }}
