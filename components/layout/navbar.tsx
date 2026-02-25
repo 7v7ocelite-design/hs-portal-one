@@ -2,12 +2,13 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Menu, X, Search, Target, MapPin, CreditCard } from 'lucide-react'
+import { Menu, X, Search, Target, MapPin, CreditCard, Radio } from 'lucide-react'
 import { useState } from 'react'
 import { cn } from '@/lib/utils'
 
 const navLinks = [
   { href: '/coaches', label: 'Coaches', icon: Search },
+  { href: '/team-portal', label: 'Team Portal', icon: Radio },
   { href: '/fit-finder', label: 'Fit Finder', icon: Target },
   { href: '/map', label: 'Map', icon: MapPin },
   { href: '/pricing', label: 'Pricing', icon: CreditCard },

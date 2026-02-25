@@ -767,3 +767,171 @@ body {
 .ea-scroll-feed-inner {
   animation: scroll-feed 20s linear infinite;
 }
+
+/* ================================
+   EA HUD COMPONENTS
+   ================================ */
+
+/* Skewed / angular button */
+.ea-btn-skew {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  font-weight: 800;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transform: skewX(-12deg);
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.ea-btn-skew > * {
+  transform: skewX(12deg);
+}
+
+.ea-btn-skew-red {
+  background: linear-gradient(135deg, #c41e3a, #8b1429);
+  color: white;
+  border: 1px solid rgba(196, 30, 58, 0.6);
+}
+
+.ea-btn-skew-red:hover {
+  box-shadow: 0 0 20px rgba(225, 6, 0, 0.5);
+  border-color: #e10600;
+}
+
+.ea-btn-skew-dark {
+  background: rgba(15, 15, 20, 0.9);
+  color: #ccc;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ea-btn-skew-dark:hover {
+  border-color: rgba(196, 30, 58, 0.5);
+  color: white;
+  box-shadow: 0 0 15px rgba(225, 6, 0, 0.3);
+}
+
+/* Brushed metal texture */
+.brushed-metal {
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.015) 0px,
+      transparent 1px,
+      transparent 2px,
+      rgba(255, 255, 255, 0.015) 3px
+    ),
+    linear-gradient(180deg, rgba(30, 30, 35, 0.95) 0%, rgba(18, 18, 22, 0.98) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Status glow dot */
+@keyframes glow-dot {
+  0%, 100% { box-shadow: 0 0 4px currentColor; }
+  50% { box-shadow: 0 0 10px currentColor, 0 0 20px currentColor; }
+}
+
+.glow-dot-green {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  color: #22c55e;
+  animation: glow-dot 2s ease-in-out infinite;
+}
+
+.glow-dot-yellow {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #eab308;
+  color: #eab308;
+  animation: glow-dot 2s ease-in-out infinite;
+}
+
+.glow-dot-red {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #c41e3a;
+  color: #c41e3a;
+  animation: glow-dot 1.5s ease-in-out infinite;
+}
+
+/* HUD card with angular corners */
+.ea-hud-card {
+  background: linear-gradient(135deg, rgba(12, 12, 18, 0.92) 0%, rgba(8, 8, 12, 0.96) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(196, 30, 58, 0.3);
+  clip-path: polygon(0 16px, 16px 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%);
+  position: relative;
+  box-shadow: 0 0 20px rgba(196, 30, 58, 0.1), inset 0 0 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.ea-hud-card:hover {
+  border-color: rgba(196, 30, 58, 0.5);
+  box-shadow: 0 0 30px rgba(225, 6, 0, 0.2), inset 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Coach card horizontal layout */
+.ea-coach-card-h {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+
+/* Star prestige rating */
+.ea-prestige-star {
+  color: #d4af37;
+  filter: drop-shadow(0 0 3px rgba(212, 175, 55, 0.6));
+}
+
+.ea-prestige-star-empty {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+/* Alert notification banner */
+@keyframes alert-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+.ea-alert-banner {
+  background: linear-gradient(90deg, #c41e3a 0%, #8b1429 50%, #c41e3a 100%);
+  background-size: 200% 100%;
+  animation: alert-pulse 2s ease-in-out infinite;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  clip-path: polygon(0 4px, 4px 0, 100% 0, 100% calc(100% - 4px), calc(100% - 4px) 100%, 0 100%);
+}
+
+/* Flip card animation */
+.ea-flip-container {
+  perspective: 1000px;
+}
+
+.ea-flip-inner {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.ea-flip-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.ea-flip-front,
+.ea-flip-back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.ea-flip-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  inset: 0;
+}
