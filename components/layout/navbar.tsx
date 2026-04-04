@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Menu, X, Search, Target, MapPin, CreditCard, Radio } from 'lucide-react'
+import { Menu, X, Search, Target, MapPin, CreditCard, Radio, Database } from 'lucide-react'
 import { useState } from 'react'
 import { cn } from '@/lib/utils'
 
@@ -12,6 +12,7 @@ const navLinks = [
   { href: '/fit-finder', label: 'Fit Finder', icon: Target },
   { href: '/map', label: 'Map', icon: MapPin },
   { href: '/pricing', label: 'Pricing', icon: CreditCard },
+  { href: '/admin/enrichment', label: 'Enrichment', icon: Database },
 ]
 
 export function Navbar() {
