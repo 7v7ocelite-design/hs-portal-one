@@ -21,7 +21,7 @@ import {
    ═══════════════════════════════════════════════════ */
 
 // Hardcoded batch 1 data from web search
-import enrichmentData from '@/../scripts/enrichment-results/twitter-handles-batch1.json'
+import enrichmentData from '@/lib/enrichment-data.json'
 
 interface MatchResult {
   enrichment_name: string
